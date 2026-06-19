@@ -1,24 +1,39 @@
 import asyncio
 import time
-import matplotlib.pyplot as plt
+import json
+import logging
 import urllib.parse
+import matplotlib.pyplot as plt
+
+# Cấu hình logging toàn cục
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(name)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.FileHandler("crawler_run.log", encoding='utf-8'),
+        logging.StreamHandler()
+    ]
+)
+logger = logging.getLogger("Evaluate")
+
 from agent.rl_crawler import RLCrawler
 from baselines.bfs_crawler import BFSCrawler
 from baselines.focused_crawler import FocusedCrawler
 
 async def run_evaluation():
-    target_url = "https://quotes.toscrape.com" # A safe dummy site to crawl
+    target_url = "https://vnexpress.net" # Vietnamese news site
     parsed_url = urllib.parse.urlparse(target_url)
     target_domain = parsed_url.netloc
-    max_depth = 2 # Small depth for quick evaluation
+    max_depth = 5 # Tăng độ sâu vì đã có giới hạn số trang
+    max_pages = 100 # Chạy tối đa 100 mẫu
     
-    print(f"Starting evaluation on {target_domain} (Max Depth: {max_depth})")
+    logger.info(f"Bắt đầu quá trình Evaluation trên domain: {target_domain} (Max Depth: {max_depth}, Max Pages: {max_pages})")
     
     results = {}
     
     # 1. Evaluate BFS Crawler
-    print("\n--- Running BFS Crawler ---")
-    bfs = BFSCrawler(target_domain, max_depth)
+    logger.info("\n" + "="*50 + "\n--- Chạy BFS Crawler ---\n" + "="*50)
+    bfs = BFSCrawler(target_domain, max_depth, max_pages)
     await bfs.initialize()
     start_time = time.time()
     bfs_reward, bfs_steps = await bfs.crawl(target_url)
@@ -26,11 +41,12 @@ async def run_evaluation():
     await bfs.close()
     
     results['BFS'] = {'reward': bfs_reward, 'steps': bfs_steps, 'time': bfs_time}
-    print(f"BFS finished in {bfs_time:.2f}s | Reward: {bfs_reward} | Steps: {bfs_steps}")
+    logger.info(f"BFS hoàn thành trong {bfs_time:.2f}s | Tổng Reward: {bfs_reward} | Tổng số trang cào: {bfs_steps}")
     
     # 2. Evaluate Focused Crawler
-    print("\n--- Running Focused Crawler ---")
-    focused = FocusedCrawler(target_domain, max_depth, target_keywords=['login', 'tag'])
+    logger.info("\n" + "="*50 + "\n--- Chạy Focused Crawler ---\n" + "="*50)
+    # Từ khóa dành riêng cho VnExpress
+    focused = FocusedCrawler(target_domain, max_depth, target_keywords=['thể thao', 'kinh doanh', 'công nghệ', 'thế giới', 'thời sự'], max_pages=max_pages)
     await focused.initialize()
     start_time = time.time()
     focused_reward, focused_steps = await focused.crawl(target_url)
@@ -38,23 +54,23 @@ async def run_evaluation():
     await focused.close()
     
     results['Focused'] = {'reward': focused_reward, 'steps': focused_steps, 'time': focused_time}
-    print(f"Focused finished in {focused_time:.2f}s | Reward: {focused_reward} | Steps: {focused_steps}")
+    logger.info(f"Focused hoàn thành trong {focused_time:.2f}s | Tổng Reward: {focused_reward} | Tổng số trang cào: {focused_steps}")
     
     # 3. Evaluate RL Crawler
-    print("\n--- Running RL Crawler ---")
-    rl = RLCrawler(target_domain, max_depth)
+    logger.info("\n" + "="*50 + "\n--- Chạy RL Crawler (1 Episode) ---\n" + "="*50)
+    rl = RLCrawler(target_domain, max_depth, max_pages=max_pages)
     await rl.initialize()
     start_time = time.time()
-    # In a real scenario we'd train for many episodes.
-    # Here we just run 1 episode to compare it.
+    # Chạy 1 episode test
     rl_reward, rl_steps = await rl.train_episode(target_url)
     rl_time = time.time() - start_time
     await rl.close()
     
-    results['RL (1 Episode)'] = {'reward': rl_reward, 'steps': rl_steps, 'time': rl_time}
-    print(f"RL finished in {rl_time:.2f}s | Reward: {rl_reward} | Steps: {rl_steps}")
+    results['RL (1 Ep)'] = {'reward': rl_reward, 'steps': rl_steps, 'time': rl_time}
+    logger.info(f"RL hoàn thành trong {rl_time:.2f}s | Tổng Reward: {rl_reward} | Tổng số trang cào: {rl_steps}")
     
     # Plotting
+    logger.info("Đang tạo biểu đồ so sánh kết quả...")
     names = list(results.keys())
     rewards = [results[n]['reward'] for n in names]
     steps = [results[n]['steps'] for n in names]
@@ -63,23 +79,32 @@ async def run_evaluation():
     fig, axs = plt.subplots(1, 3, figsize=(15, 5))
     
     axs[0].bar(names, rewards, color=['blue', 'orange', 'green'])
-    axs[0].set_title('Total Reward (Coverage)')
+    axs[0].set_title('Tổng Reward (Coverage)')
     axs[0].set_ylabel('Reward')
     
     axs[1].bar(names, steps, color=['blue', 'orange', 'green'])
-    axs[1].set_title('Total Steps (Cost)')
+    axs[1].set_title('Số trang đã cào (Cost / Steps)')
     axs[1].set_ylabel('Steps')
     
     axs[2].bar(names, times, color=['blue', 'orange', 'green'])
-    axs[2].set_title('Execution Time (Cost)')
+    axs[2].set_title('Thời gian thực thi (Cost)')
     axs[2].set_ylabel('Seconds')
     
     plt.tight_layout()
     plt.savefig('evaluation_results.png')
-    print("\nResults plotted to evaluation_results.png")
+    
+    # Lưu kết quả tính toán thô ra JSON
+    with open('evaluation_results.json', 'w', encoding='utf-8') as f:
+        json.dump(results, f, ensure_ascii=False, indent=4)
+        
+    logger.info("Kết quả tính toán đã được lưu vào 'evaluation_results.json'.")
+    logger.info("Kết quả biểu đồ đã được lưu thành tệp 'evaluation_results.png'. Hãy mở tệp này để xem.")
+    logger.info("Hoàn tất quá trình cào dữ liệu! Text của các bài báo đã được lưu trong folder 'data/vnexpress_net/'.")
 
 if __name__ == "__main__":
-    # Workaround for playwright asyncio issue
     import nest_asyncio
     nest_asyncio.apply()
-    asyncio.run(run_evaluation())
+    try:
+        asyncio.run(run_evaluation())
+    except KeyboardInterrupt:
+        logger.info("Người dùng đã buộc dừng script (KeyboardInterrupt).")

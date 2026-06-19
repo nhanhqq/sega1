@@ -3,15 +3,19 @@ import torch.optim as optim
 import torch.nn as nn
 import numpy as np
 import random
+import logging
 from env.crawler_env import CrawlerEnv
 from env.state_extractor import StateExtractor
 from agent.dqn_model import DQNModel
 from agent.replay_buffer import ReplayBuffer
 
+logger = logging.getLogger("RLCrawler")
+
 class RLCrawler:
-    def __init__(self, target_domain, max_depth=5, gamma=0.99, lr=1e-3, batch_size=32, max_features=100):
+    def __init__(self, target_domain, max_depth=5, gamma=0.99, lr=1e-3, batch_size=32, max_features=100, max_pages=100):
         self.env = CrawlerEnv(target_domain, max_depth)
         self.state_extractor = StateExtractor(max_features)
+        self.max_pages = max_pages
         
         self.state_dim = max_features + 2 # text features + queue_size + current_depth
         self.q_net = DQNModel(self.state_dim)
@@ -44,7 +48,7 @@ class RLCrawler:
         # We need an initial state. Let's just create a dummy zero state
         current_state = np.zeros(self.state_dim)
         
-        while self.frontier and current_depth <= self.env.max_depth:
+        while self.frontier and current_depth <= self.env.max_depth and steps < self.max_pages:
             # Epsilon-greedy action selection from frontier
             if random.random() < self.epsilon:
                 # Explore: random URL
@@ -57,8 +61,12 @@ class RLCrawler:
                 action_idx = random.randint(0, len(self.frontier) - 1) # simplified
                 
             selected_url = self.frontier.pop(action_idx)
+            # Khởi tạo state bằng 0 nếu chưa có (simplified)
+            # action là index của URL được chọn từ frontier
             
             html, reward, new_links, done = await self.env.step(selected_url, current_depth)
+            
+            logger.info(f"RL Queue size: {len(self.frontier)} | Epsilon: {self.epsilon:.2f} | Cào: {selected_url}")
             
             # Extract state
             next_state = self.state_extractor.get_state(html, len(self.frontier), current_depth)

@@ -1,10 +1,14 @@
 import asyncio
+import logging
 import urllib.parse
 from env.crawler_env import CrawlerEnv
 
+logger = logging.getLogger("BFSCrawler")
+
 class BFSCrawler:
-    def __init__(self, target_domain, max_depth=5):
+    def __init__(self, target_domain, max_depth=5, max_pages=100):
         self.env = CrawlerEnv(target_domain, max_depth)
+        self.max_pages = max_pages
         self.frontier = []
         
     async def initialize(self):
@@ -16,7 +20,7 @@ class BFSCrawler:
         total_reward = 0
         steps = 0
         
-        while self.frontier:
+        while self.frontier and steps < self.max_pages:
             current_url, depth = self.frontier.pop(0) # BFS: pop from front
             
             if depth > self.env.max_depth:
@@ -25,6 +29,8 @@ class BFSCrawler:
             html, reward, new_links, done = await self.env.step(current_url, depth)
             total_reward += reward
             steps += 1
+            
+            logger.info(f"BFS Queue size: {len(self.frontier)} | Đã quét xong: {current_url}")
             
             for link in new_links:
                 if link not in self.env.visited_urls and not any(link == q_url for q_url, _ in self.frontier):
