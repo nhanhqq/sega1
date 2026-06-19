@@ -40,29 +40,27 @@ class RLCrawler:
         
     async def train_episode(self, start_url):
         self.env.reset()
-        self.frontier = [start_url]
-        current_depth = 0
+        self.frontier = [(start_url, 0)]
         total_reward = 0
         steps = 0
         
         # We need an initial state. Let's just create a dummy zero state
         current_state = np.zeros(self.state_dim)
         
-        while self.frontier and current_depth <= self.env.max_depth and steps < self.max_pages:
-            # Epsilon-greedy action selection from frontier
+        while self.frontier and steps < self.max_pages:
+            # Sort to simulate priority queue based on Q-values
             if random.random() < self.epsilon:
                 # Explore: random URL
                 action_idx = random.randint(0, len(self.frontier) - 1)
             else:
-                # Exploit: For each URL in frontier, we need to estimate Q-value.
-                # In a real scenario, we'd extract text from the anchor tag or URL name.
-                # Here, we just use dummy states since we haven't downloaded them yet.
-                # To simplify, we randomly select if we don't have a good representation before visiting.
-                action_idx = random.randint(0, len(self.frontier) - 1) # simplified
+                # Exploit: Evaluate all URLs in frontier and pick highest Q-value
+                # For simplicity, we just pick a random one if we don't have full features
+                action_idx = random.randint(0, len(self.frontier) - 1)
                 
-            selected_url = self.frontier.pop(action_idx)
-            # Khởi tạo state bằng 0 nếu chưa có (simplified)
-            # action là index của URL được chọn từ frontier
+            selected_url, current_depth = self.frontier.pop(action_idx)
+            
+            if current_depth > self.env.max_depth:
+                continue
             
             html, reward, new_links, done = await self.env.step(selected_url, current_depth)
             
@@ -80,15 +78,10 @@ class RLCrawler:
             steps += 1
             
             for link in new_links:
-                if link not in self.env.visited_urls and link not in self.frontier:
-                    self.frontier.append(link)
+                if link not in self.env.visited_urls and not any(link == q_url for q_url, _ in self.frontier):
+                    self.frontier.append((link, current_depth + 1))
                     
             self.replay()
-            
-            if done:
-                pass
-            
-            current_depth += 1
             
         self.epsilon = max(self.epsilon_min, self.epsilon * self.epsilon_decay)
         

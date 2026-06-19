@@ -37,11 +37,12 @@ async def run_evaluation():
     await bfs.initialize()
     start_time = time.time()
     bfs_reward, bfs_steps = await bfs.crawl(target_url)
+    bfs_bandwidth = bfs.env.total_bandwidth / (1024 * 1024) # MB
     bfs_time = time.time() - start_time
     await bfs.close()
     
-    results['BFS'] = {'reward': bfs_reward, 'steps': bfs_steps, 'time': bfs_time}
-    logger.info(f"BFS hoàn thành trong {bfs_time:.2f}s | Tổng Reward: {bfs_reward} | Tổng số trang cào: {bfs_steps}")
+    results['BFS'] = {'reward': bfs_reward, 'steps': bfs_steps, 'time': bfs_time, 'bandwidth_MB': bfs_bandwidth}
+    logger.info(f"BFS hoàn thành trong {bfs_time:.2f}s | Băng thông: {bfs_bandwidth:.2f} MB | Tổng Reward: {bfs_reward} | Tổng số trang cào: {bfs_steps}")
     
     # 2. Evaluate Focused Crawler
     logger.info("\n" + "="*50 + "\n--- Chạy Focused Crawler ---\n" + "="*50)
@@ -50,44 +51,51 @@ async def run_evaluation():
     await focused.initialize()
     start_time = time.time()
     focused_reward, focused_steps = await focused.crawl(target_url)
+    focused_bandwidth = focused.env.total_bandwidth / (1024 * 1024) # MB
     focused_time = time.time() - start_time
     await focused.close()
     
-    results['Focused'] = {'reward': focused_reward, 'steps': focused_steps, 'time': focused_time}
-    logger.info(f"Focused hoàn thành trong {focused_time:.2f}s | Tổng Reward: {focused_reward} | Tổng số trang cào: {focused_steps}")
+    results['Focused'] = {'reward': focused_reward, 'steps': focused_steps, 'time': focused_time, 'bandwidth_MB': focused_bandwidth}
+    logger.info(f"Focused hoàn thành trong {focused_time:.2f}s | Băng thông: {focused_bandwidth:.2f} MB | Tổng Reward: {focused_reward} | Tổng số trang cào: {focused_steps}")
     
     # 3. Evaluate RL Crawler
     logger.info("\n" + "="*50 + "\n--- Chạy RL Crawler (1 Episode) ---\n" + "="*50)
     rl = RLCrawler(target_domain, max_depth, max_pages=max_pages)
     await rl.initialize()
     start_time = time.time()
+    
+    # Mô phỏng tính năng "Deep Web Search" bằng cách tương tác với form tìm kiếm
+    logger.info("RL Crawler thực hiện Deep Web Action: Tìm kiếm form với từ khóa 'thể thao'")
+    await rl.env.simulate_deep_web_search("thể thao")
+    
     # Chạy 1 episode test
     rl_reward, rl_steps = await rl.train_episode(target_url)
+    rl_bandwidth = rl.env.total_bandwidth / (1024 * 1024) # MB
     rl_time = time.time() - start_time
     await rl.close()
     
-    results['RL (1 Ep)'] = {'reward': rl_reward, 'steps': rl_steps, 'time': rl_time}
-    logger.info(f"RL hoàn thành trong {rl_time:.2f}s | Tổng Reward: {rl_reward} | Tổng số trang cào: {rl_steps}")
+    results['RL (1 Ep)'] = {'reward': rl_reward, 'steps': rl_steps, 'time': rl_time, 'bandwidth_MB': rl_bandwidth}
+    logger.info(f"RL hoàn thành trong {rl_time:.2f}s | Băng thông: {rl_bandwidth:.2f} MB | Tổng Reward: {rl_reward} | Tổng số trang cào: {rl_steps}")
     
     # Plotting
     logger.info("Đang tạo biểu đồ so sánh kết quả...")
     names = list(results.keys())
     rewards = [results[n]['reward'] for n in names]
-    steps = [results[n]['steps'] for n in names]
+    bandwidths = [results[n]['bandwidth_MB'] for n in names]
     times = [results[n]['time'] for n in names]
     
     fig, axs = plt.subplots(1, 3, figsize=(15, 5))
     
     axs[0].bar(names, rewards, color=['blue', 'orange', 'green'])
-    axs[0].set_title('Tổng Reward (Coverage)')
+    axs[0].set_title('Độ Phủ (Total Reward / Quality Content)')
     axs[0].set_ylabel('Reward')
     
-    axs[1].bar(names, steps, color=['blue', 'orange', 'green'])
-    axs[1].set_title('Số trang đã cào (Cost / Steps)')
-    axs[1].set_ylabel('Steps')
+    axs[1].bar(names, bandwidths, color=['blue', 'orange', 'green'])
+    axs[1].set_title('Chi phí tính toán (Băng thông - MB)')
+    axs[1].set_ylabel('MB')
     
     axs[2].bar(names, times, color=['blue', 'orange', 'green'])
-    axs[2].set_title('Thời gian thực thi (Cost)')
+    axs[2].set_title('Chi phí tính toán (Thời gian - s)')
     axs[2].set_ylabel('Seconds')
     
     plt.tight_layout()
