@@ -2678,3 +2678,936 @@
 2026-06-19 14:19:53,056 - Evaluate - INFO - Kết quả tính toán đã được lưu vào 'evaluation_results.json'.
 2026-06-19 14:19:53,056 - Evaluate - INFO - Kết quả biểu đồ đã được lưu thành tệp 'evaluation_results.png'. Hãy mở tệp này để xem.
 2026-06-19 14:19:53,056 - Evaluate - INFO - Hoàn tất quá trình cào dữ liệu! Text của các bài báo đã được lưu trong folder 'data/vnexpress_net/'.
+2026-06-20 07:33:11,855 - Evaluate - INFO - Bắt đầu quá trình Evaluation trên domain: vnexpress.net (Max Depth: 5, Max Pages: 100)
+2026-06-20 07:33:11,857 - Evaluate - INFO - 
+==================================================
+--- Chạy BFS Crawler ---
+==================================================
+2026-06-20 07:33:11,857 - CrawlerEnv - INFO - Đang khởi tạo Playwright browser...
+2026-06-20 07:33:12,993 - CrawlerEnv - INFO - Đã reset môi trường (visited_urls, bandwidth).
+2026-06-20 07:33:12,993 - CrawlerEnv - INFO - Đang cào (Depth 0): https://vnexpress.net
+2026-06-20 07:33:14,088 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net | Link mới: 51 | Reward: 10.0
+2026-06-20 07:33:14,088 - BFSCrawler - INFO - BFS Queue size: 0 | Đã quét xong: https://vnexpress.net
+2026-06-20 07:33:14,089 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/kinh-doanh
+2026-06-20 07:33:14,790 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/kinh-doanh | Link mới: 90 | Reward: 10.0
+2026-06-20 07:33:14,790 - BFSCrawler - INFO - BFS Queue size: 50 | Đã quét xong: https://vnexpress.net/kinh-doanh
+2026-06-20 07:33:14,791 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/oto-xe-may
+2026-06-20 07:33:15,386 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/oto-xe-may | Link mới: 107 | Reward: 10.0
+2026-06-20 07:33:15,387 - BFSCrawler - INFO - BFS Queue size: 115 | Đã quét xong: https://vnexpress.net/oto-xe-may
+2026-06-20 07:33:15,387 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/giao-duc
+2026-06-20 07:33:16,166 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/giao-duc | Link mới: 88 | Reward: 10.0
+2026-06-20 07:33:16,166 - BFSCrawler - INFO - BFS Queue size: 195 | Đã quét xong: https://vnexpress.net/giao-duc
+2026-06-20 07:33:16,167 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/vne-go
+2026-06-20 07:33:16,941 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/vne-go | Link mới: 23 | Reward: 4.0
+2026-06-20 07:33:16,941 - BFSCrawler - INFO - BFS Queue size: 252 | Đã quét xong: https://vnexpress.net/vne-go
+2026-06-20 07:33:16,942 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/khoa-hoc-cong-nghe
+2026-06-20 07:33:17,488 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/khoa-hoc-cong-nghe | Link mới: 82 | Reward: 10.0
+2026-06-20 07:33:17,488 - BFSCrawler - INFO - BFS Queue size: 273 | Đã quét xong: https://vnexpress.net/khoa-hoc-cong-nghe
+2026-06-20 07:33:17,489 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/thoi-su
+2026-06-20 07:33:18,172 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/thoi-su | Link mới: 94 | Reward: 10.0
+2026-06-20 07:33:18,172 - BFSCrawler - INFO - BFS Queue size: 330 | Đã quét xong: https://vnexpress.net/thoi-su
+2026-06-20 07:33:18,173 - CrawlerEnv - INFO - Đang cào (Depth 1): https://e.vnexpress.net/
+2026-06-20 07:33:19,018 - CrawlerEnv - INFO - Cào thành công: https://e.vnexpress.net/ | Link mới: 115 | Reward: -0.1
+2026-06-20 07:33:19,019 - BFSCrawler - INFO - BFS Queue size: 397 | Đã quét xong: https://e.vnexpress.net/
+2026-06-20 07:33:19,021 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/tp-hcm-mien-nhiem-mot-pho-chu-tich-ubnd-5087683.html
+2026-06-20 07:33:19,706 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/tp-hcm-mien-nhiem-mot-pho-chu-tich-ubnd-5087683.html | Link mới: 19 | Reward: 10.0
+2026-06-20 07:33:19,706 - BFSCrawler - INFO - BFS Queue size: 510 | Đã quét xong: https://vnexpress.net/tp-hcm-mien-nhiem-mot-pho-chu-tich-ubnd-5087683.html
+2026-06-20 07:33:19,706 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/goc-nhin
+2026-06-20 07:33:20,225 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/goc-nhin | Link mới: 66 | Reward: 10.0
+2026-06-20 07:33:20,225 - BFSCrawler - INFO - BFS Queue size: 509 | Đã quét xong: https://vnexpress.net/goc-nhin
+2026-06-20 07:33:20,227 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/tam-su
+2026-06-20 07:33:21,084 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/tam-su | Link mới: 47 | Reward: 10.0
+2026-06-20 07:33:21,084 - BFSCrawler - INFO - BFS Queue size: 552 | Đã quét xong: https://vnexpress.net/tam-su
+2026-06-20 07:33:21,085 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/khac-biet-giua-thoa-thuan-iran-cua-ong-trump-va-ong-obama-5087486.html
+2026-06-20 07:33:21,532 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/khac-biet-giua-thoa-thuan-iran-cua-ong-trump-va-ong-obama-5087486.html | Link mới: 8 | Reward: 2.0
+2026-06-20 07:33:21,532 - BFSCrawler - INFO - BFS Queue size: 579 | Đã quét xong: https://vnexpress.net/khac-biet-giua-thoa-thuan-iran-cua-ong-trump-va-ong-obama-5087486.html
+2026-06-20 07:33:21,532 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/23-nam-giai-ma-nguoi-chi-huy-biet-dong-sai-gon-5080206.html
+2026-06-20 07:33:22,088 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/23-nam-giai-ma-nguoi-chi-huy-biet-dong-sai-gon-5080206.html | Link mới: 20 | Reward: 10.0
+2026-06-20 07:33:22,088 - BFSCrawler - INFO - BFS Queue size: 584 | Đã quét xong: https://vnexpress.net/23-nam-giai-ma-nguoi-chi-huy-biet-dong-sai-gon-5080206.html
+2026-06-20 07:33:22,088 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/my-thang-lien-hai-tran-o-world-cup-sau-96-nam-5087834.html
+2026-06-20 07:33:22,623 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/my-thang-lien-hai-tran-o-world-cup-sau-96-nam-5087834.html | Link mới: 12 | Reward: 4.0
+2026-06-20 07:33:22,623 - BFSCrawler - INFO - BFS Queue size: 584 | Đã quét xong: https://vnexpress.net/my-thang-lien-hai-tran-o-world-cup-sau-96-nam-5087834.html
+2026-06-20 07:33:22,624 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/ba-lan-thu-hoi-huan-chuong-tung-trao-cho-tong-thong-ukraine-5087835.html
+2026-06-20 07:33:23,219 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/ba-lan-thu-hoi-huan-chuong-tung-trao-cho-tong-thong-ukraine-5087835.html | Link mới: 19 | Reward: 10.0
+2026-06-20 07:33:23,219 - BFSCrawler - INFO - BFS Queue size: 592 | Đã quét xong: https://vnexpress.net/ba-lan-thu-hoi-huan-chuong-tung-trao-cho-tong-thong-ukraine-5087835.html
+2026-06-20 07:33:23,219 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/y-kien
+2026-06-20 07:33:23,876 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/y-kien | Link mới: 62 | Reward: 10.0
+2026-06-20 07:33:23,876 - BFSCrawler - INFO - BFS Queue size: 591 | Đã quét xong: https://vnexpress.net/y-kien
+2026-06-20 07:33:23,877 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/bat-dong-san
+2026-06-20 07:33:24,443 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/bat-dong-san | Link mới: 90 | Reward: 10.0
+2026-06-20 07:33:24,443 - BFSCrawler - INFO - BFS Queue size: 634 | Đã quét xong: https://vnexpress.net/bat-dong-san
+2026-06-20 07:33:24,445 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/go-vuong-chung-nhan-cho-ghe-an-toan-tre-em-5087674.html
+2026-06-20 07:33:24,843 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/go-vuong-chung-nhan-cho-ghe-an-toan-tre-em-5087674.html | Link mới: 18 | Reward: 10.0
+2026-06-20 07:33:24,843 - BFSCrawler - INFO - BFS Queue size: 705 | Đã quét xong: https://vnexpress.net/go-vuong-chung-nhan-cho-ghe-an-toan-tre-em-5087674.html
+2026-06-20 07:33:24,843 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/thu-gian
+2026-06-20 07:33:25,444 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/thu-gian | Link mới: 63 | Reward: 10.0
+2026-06-20 07:33:25,444 - BFSCrawler - INFO - BFS Queue size: 704 | Đã quét xong: https://vnexpress.net/thu-gian
+2026-06-20 07:33:25,446 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/bi-quyet-hoc-cua-thu-khoa-lop-10-ha-noi-2026-5087821.html
+2026-06-20 07:33:25,971 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/bi-quyet-hoc-cua-thu-khoa-lop-10-ha-noi-2026-5087821.html | Link mới: 17 | Reward: 10.0
+2026-06-20 07:33:25,971 - BFSCrawler - INFO - BFS Queue size: 750 | Đã quét xong: https://vnexpress.net/bi-quyet-hoc-cua-thu-khoa-lop-10-ha-noi-2026-5087821.html
+2026-06-20 07:33:25,971 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/hong-anh-17-nam-khong-co-con-vo-chong-toi-van-hanh-phuc-5087072.html
+2026-06-20 07:33:26,403 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/hong-anh-17-nam-khong-co-con-vo-chong-toi-van-hanh-phuc-5087072.html | Link mới: 22 | Reward: 10.0
+2026-06-20 07:33:26,403 - BFSCrawler - INFO - BFS Queue size: 749 | Đã quét xong: https://vnexpress.net/hong-anh-17-nam-khong-co-con-vo-chong-toi-van-hanh-phuc-5087072.html
+2026-06-20 07:33:26,403 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/
+2026-06-20 07:33:27,105 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/ | Link mới: 164 | Reward: 10.0
+2026-06-20 07:33:27,105 - BFSCrawler - INFO - BFS Queue size: 754 | Đã quét xong: https://vnexpress.net/
+2026-06-20 07:33:27,110 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/viet-nam-tang-hoi-nhap-phap-ly-quoc-te-khi-co-tham-phan-tai-toa-an-quoc-te-ve-luat-bien-5087808.html
+2026-06-20 07:33:27,604 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/viet-nam-tang-hoi-nhap-phap-ly-quoc-te-khi-co-tham-phan-tai-toa-an-quoc-te-ve-luat-bien-5087808.html | Link mới: 15 | Reward: 10.0
+2026-06-20 07:33:27,604 - BFSCrawler - INFO - BFS Queue size: 847 | Đã quét xong: https://vnexpress.net/viet-nam-tang-hoi-nhap-phap-ly-quoc-te-khi-co-tham-phan-tai-toa-an-quoc-te-ve-luat-bien-5087808.html
+2026-06-20 07:33:27,604 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/doi-song
+2026-06-20 07:33:28,170 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/doi-song | Link mới: 66 | Reward: 10.0
+2026-06-20 07:33:28,170 - BFSCrawler - INFO - BFS Queue size: 846 | Đã quét xong: https://vnexpress.net/doi-song
+2026-06-20 07:33:28,172 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/phap-luat
+2026-06-20 07:33:28,861 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/phap-luat | Link mới: 67 | Reward: 10.0
+2026-06-20 07:33:28,861 - BFSCrawler - INFO - BFS Queue size: 887 | Đã quét xong: https://vnexpress.net/phap-luat
+2026-06-20 07:33:28,864 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/the-thao
+2026-06-20 07:33:29,432 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/the-thao | Link mới: 76 | Reward: 10.0
+2026-06-20 07:33:29,433 - BFSCrawler - INFO - BFS Queue size: 938 | Đã quét xong: https://vnexpress.net/the-thao
+2026-06-20 07:33:29,435 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/thu-khoa-thi-lop-10-cua-ha-noi-dat-29-75-30-diem-5087800.html
+2026-06-20 07:33:30,023 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/thu-khoa-thi-lop-10-cua-ha-noi-dat-29-75-30-diem-5087800.html | Link mới: 16 | Reward: 10.0
+2026-06-20 07:33:30,023 - BFSCrawler - INFO - BFS Queue size: 982 | Đã quét xong: https://vnexpress.net/thu-khoa-thi-lop-10-cua-ha-noi-dat-29-75-30-diem-5087800.html
+2026-06-20 07:33:30,023 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/dap-an-cau-hoi-steve-jobs-viet-nam-trong-de-van-tot-nghiep-thpt-5087784.html
+2026-06-20 07:33:30,501 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/dap-an-cau-hoi-steve-jobs-viet-nam-trong-de-van-tot-nghiep-thpt-5087784.html | Link mới: 12 | Reward: 10.0
+2026-06-20 07:33:30,501 - BFSCrawler - INFO - BFS Queue size: 981 | Đã quét xong: https://vnexpress.net/dap-an-cau-hoi-steve-jobs-viet-nam-trong-de-van-tot-nghiep-thpt-5087784.html
+2026-06-20 07:33:30,502 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/tac-gia/to-kien-1990.html
+2026-06-20 07:33:31,605 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/tac-gia/to-kien-1990.html | Link mới: 38 | Reward: 10.0
+2026-06-20 07:33:31,605 - BFSCrawler - INFO - BFS Queue size: 981 | Đã quét xong: https://vnexpress.net/tac-gia/to-kien-1990.html
+2026-06-20 07:33:31,607 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/tp-hcm-dang-tim-ho-chon-900-liet-si-nhu-the-nao-5087817.html
+2026-06-20 07:33:31,952 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/tp-hcm-dang-tim-ho-chon-900-liet-si-nhu-the-nao-5087817.html | Link mới: 22 | Reward: 4.0
+2026-06-20 07:33:31,952 - BFSCrawler - INFO - BFS Queue size: 998 | Đã quét xong: https://vnexpress.net/tp-hcm-dang-tim-ho-chon-900-liet-si-nhu-the-nao-5087817.html
+2026-06-20 07:33:31,952 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/cuu-chu-tich-phuong-linh-an-vu-bao-ke-xay-nha-trai-phep-o-ha-noi-5087794.html
+2026-06-20 07:33:32,506 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/cuu-chu-tich-phuong-linh-an-vu-bao-ke-xay-nha-trai-phep-o-ha-noi-5087794.html | Link mới: 12 | Reward: 10.0
+2026-06-20 07:33:32,506 - BFSCrawler - INFO - BFS Queue size: 997 | Đã quét xong: https://vnexpress.net/cuu-chu-tich-phuong-linh-an-vu-bao-ke-xay-nha-trai-phep-o-ha-noi-5087794.html
+2026-06-20 07:33:32,506 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/tin-tuc-24h
+2026-06-20 07:33:32,919 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/tin-tuc-24h | Link mới: 35 | Reward: 10.0
+2026-06-20 07:33:32,919 - BFSCrawler - INFO - BFS Queue size: 996 | Đã quét xong: https://vnexpress.net/tin-tuc-24h
+2026-06-20 07:33:32,920 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/ai-giu-mat-guong-tay-ho-5087447.html
+2026-06-20 07:33:33,283 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/ai-giu-mat-guong-tay-ho-5087447.html | Link mới: 13 | Reward: 10.0
+2026-06-20 07:33:33,283 - BFSCrawler - INFO - BFS Queue size: 998 | Đã quét xong: https://vnexpress.net/ai-giu-mat-guong-tay-ho-5087447.html
+2026-06-20 07:33:33,284 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/thu-tuong-italy-tuc-gian-bac-tin-xin-chup-anh-cung-ong-trump-5087788.html
+2026-06-20 07:33:33,807 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/thu-tuong-italy-tuc-gian-bac-tin-xin-chup-anh-cung-ong-trump-5087788.html | Link mới: 8 | Reward: 10.0
+2026-06-20 07:33:33,808 - BFSCrawler - INFO - BFS Queue size: 997 | Đã quét xong: https://vnexpress.net/thu-tuong-italy-tuc-gian-bac-tin-xin-chup-anh-cung-ong-trump-5087788.html
+2026-06-20 07:33:33,808 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/dat-nuoc-khong-the-vuon-minh-neu-thieu-bao-chi-tien-phong-5087754.html
+2026-06-20 07:33:34,242 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/dat-nuoc-khong-the-vuon-minh-neu-thieu-bao-chi-tien-phong-5087754.html | Link mới: 13 | Reward: 10.0
+2026-06-20 07:33:34,242 - BFSCrawler - INFO - BFS Queue size: 996 | Đã quét xong: https://vnexpress.net/dat-nuoc-khong-the-vuon-minh-neu-thieu-bao-chi-tien-phong-5087754.html
+2026-06-20 07:33:34,242 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/truc-tiep-brazil-vs-haiti-5087838.html
+2026-06-20 07:33:34,754 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/truc-tiep-brazil-vs-haiti-5087838.html | Link mới: 15 | Reward: 6.0
+2026-06-20 07:33:34,754 - BFSCrawler - INFO - BFS Queue size: 996 | Đã quét xong: https://vnexpress.net/truc-tiep-brazil-vs-haiti-5087838.html
+2026-06-20 07:33:34,754 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/suc-khoe
+2026-06-20 07:33:35,339 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/suc-khoe | Link mới: 68 | Reward: 10.0
+2026-06-20 07:33:35,340 - BFSCrawler - INFO - BFS Queue size: 1001 | Đã quét xong: https://vnexpress.net/suc-khoe
+2026-06-20 07:33:35,342 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/diem-chuan-lop-10-nam-2026-ha-noi-o-tat-ca-122-truong-cong-lap-chi-tiet-nhat-5086370.html
+2026-06-20 07:33:35,965 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/diem-chuan-lop-10-nam-2026-ha-noi-o-tat-ca-122-truong-cong-lap-chi-tiet-nhat-5086370.html | Link mới: 13 | Reward: 10.0
+2026-06-20 07:33:35,965 - BFSCrawler - INFO - BFS Queue size: 1045 | Đã quét xong: https://vnexpress.net/diem-chuan-lop-10-nam-2026-ha-noi-o-tat-ca-122-truong-cong-lap-chi-tiet-nhat-5086370.html
+2026-06-20 07:33:35,965 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/co-gai-vinh-long-5-nam-cua-do-chang-trai-duc-5084773.html
+2026-06-20 07:33:36,352 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/co-gai-vinh-long-5-nam-cua-do-chang-trai-duc-5084773.html | Link mới: 11 | Reward: 10.0
+2026-06-20 07:33:36,352 - BFSCrawler - INFO - BFS Queue size: 1044 | Đã quét xong: https://vnexpress.net/co-gai-vinh-long-5-nam-cua-do-chang-trai-duc-5084773.html
+2026-06-20 07:33:36,352 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/tiktoker-nhat-duy-nhat-hoang-bi-phat-9-nam-tu-5087778.html
+2026-06-20 07:33:36,880 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/tiktoker-nhat-duy-nhat-hoang-bi-phat-9-nam-tu-5087778.html | Link mới: 10 | Reward: 10.0
+2026-06-20 07:33:36,880 - BFSCrawler - INFO - BFS Queue size: 1043 | Đã quét xong: https://vnexpress.net/tiktoker-nhat-duy-nhat-hoang-bi-phat-9-nam-tu-5087778.html
+2026-06-20 07:33:36,880 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/zalo-ra-soat-tai-khoan-dang-ky-bang-so-dien-thoai-bi-thu-hoi-5087616.html
+2026-06-20 07:33:37,279 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/zalo-ra-soat-tai-khoan-dang-ky-bang-so-dien-thoai-bi-thu-hoi-5087616.html | Link mới: 13 | Reward: 10.0
+2026-06-20 07:33:37,279 - BFSCrawler - INFO - BFS Queue size: 1042 | Đã quét xong: https://vnexpress.net/zalo-ra-soat-tai-khoan-dang-ky-bang-so-dien-thoai-bi-thu-hoi-5087616.html
+2026-06-20 07:33:37,280 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/israel-hezbollah-nhat-tri-ngung-ban-5087793.html
+2026-06-20 07:33:37,686 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/israel-hezbollah-nhat-tri-ngung-ban-5087793.html | Link mới: 11 | Reward: 10.0
+2026-06-20 07:33:37,686 - BFSCrawler - INFO - BFS Queue size: 1043 | Đã quét xong: https://vnexpress.net/israel-hezbollah-nhat-tri-ngung-ban-5087793.html
+2026-06-20 07:33:37,687 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/chu-de/thanh-pho-ho-chi-minh-2091
+2026-06-20 07:33:38,819 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/chu-de/thanh-pho-ho-chi-minh-2091 | Link mới: 26 | Reward: 10.0
+2026-06-20 07:33:38,819 - BFSCrawler - INFO - BFS Queue size: 1042 | Đã quét xong: https://vnexpress.net/chu-de/thanh-pho-ho-chi-minh-2091
+2026-06-20 07:33:38,820 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/du-lich
+2026-06-20 07:33:39,371 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/du-lich | Link mới: 79 | Reward: 10.0
+2026-06-20 07:33:39,371 - BFSCrawler - INFO - BFS Queue size: 1050 | Đã quét xong: https://vnexpress.net/du-lich
+2026-06-20 07:33:39,375 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/dap-an-chinh-thuc-tat-ca-mon-thi-tot-nghiep-thpt-2026-cua-bo-giao-duc-va-dao-tao-5086438.html
+2026-06-20 07:33:39,796 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/dap-an-chinh-thuc-tat-ca-mon-thi-tot-nghiep-thpt-2026-cua-bo-giao-duc-va-dao-tao-5086438.html | Link mới: 9 | Reward: 10.0
+2026-06-20 07:33:39,796 - BFSCrawler - INFO - BFS Queue size: 1119 | Đã quét xong: https://vnexpress.net/dap-an-chinh-thuc-tat-ca-mon-thi-tot-nghiep-thpt-2026-cua-bo-giao-duc-va-dao-tao-5086438.html
+2026-06-20 07:33:39,796 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/doi-tuyen-bo-dao-nha-nguy-co-chia-re-vi-ronaldo-5087744.html
+2026-06-20 07:33:40,381 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/doi-tuyen-bo-dao-nha-nguy-co-chia-re-vi-ronaldo-5087744.html | Link mới: 18 | Reward: 4.0
+2026-06-20 07:33:40,381 - BFSCrawler - INFO - BFS Queue size: 1118 | Đã quét xong: https://vnexpress.net/doi-tuyen-bo-dao-nha-nguy-co-chia-re-vi-ronaldo-5087744.html
+2026-06-20 07:33:40,383 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/the-gioi
+2026-06-20 07:33:40,992 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/the-gioi | Link mới: 58 | Reward: 10.0
+2026-06-20 07:33:40,999 - BFSCrawler - INFO - BFS Queue size: 1126 | Đã quét xong: https://vnexpress.net/the-gioi
+2026-06-20 07:33:41,002 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/chu-de/thanh-pho-ha-noi-2056
+2026-06-20 07:33:42,184 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/chu-de/thanh-pho-ha-noi-2056 | Link mới: 26 | Reward: 10.0
+2026-06-20 07:33:42,184 - BFSCrawler - INFO - BFS Queue size: 1174 | Đã quét xong: https://vnexpress.net/chu-de/thanh-pho-ha-noi-2056
+2026-06-20 07:33:42,185 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/lich-van-nien
+2026-06-20 07:33:42,768 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/lich-van-nien | Link mới: 5 | Reward: 10.0
+2026-06-20 07:33:42,769 - BFSCrawler - INFO - BFS Queue size: 1180 | Đã quét xong: https://vnexpress.net/lich-van-nien
+2026-06-20 07:33:42,769 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/giai-tri
+2026-06-20 07:33:43,435 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/giai-tri | Link mới: 61 | Reward: 10.0
+2026-06-20 07:33:43,435 - BFSCrawler - INFO - BFS Queue size: 1179 | Đã quét xong: https://vnexpress.net/giai-tri
+2026-06-20 07:33:43,438 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/myvne
+2026-06-20 07:33:44,328 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/myvne | Link mới: 3 | Reward: 10.0
+2026-06-20 07:33:44,328 - BFSCrawler - INFO - BFS Queue size: 1224 | Đã quét xong: https://vnexpress.net/myvne
+2026-06-20 07:33:44,329 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/cuc-dien-anh-canh-bao-tinh-trang-qua-nhieu-phim-kinh-di-5087810.html
+2026-06-20 07:33:44,709 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/cuc-dien-anh-canh-bao-tinh-trang-qua-nhieu-phim-kinh-di-5087810.html | Link mới: 6 | Reward: 10.0
+2026-06-20 07:33:44,709 - BFSCrawler - INFO - BFS Queue size: 1223 | Đã quét xong: https://vnexpress.net/cuc-dien-anh-canh-bao-tinh-trang-qua-nhieu-phim-kinh-di-5087810.html
+2026-06-20 07:33:44,709 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/the-gioi-thieu-hut-1-15-ty-thung-dau-trong-xung-dot-trung-dong-5087768.html
+2026-06-20 07:33:45,143 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/the-gioi-thieu-hut-1-15-ty-thung-dau-trong-xung-dot-trung-dong-5087768.html | Link mới: 4 | Reward: 10.0
+2026-06-20 07:33:45,143 - BFSCrawler - INFO - BFS Queue size: 1224 | Đã quét xong: https://vnexpress.net/the-gioi-thieu-hut-1-15-ty-thung-dau-trong-xung-dot-trung-dong-5087768.html
+2026-06-20 07:33:45,143 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/nguoi-my-manh-tay-chi-tieu-5087193.html
+2026-06-20 07:33:45,543 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/nguoi-my-manh-tay-chi-tieu-5087193.html | Link mới: 7 | Reward: 10.0
+2026-06-20 07:33:45,543 - BFSCrawler - INFO - BFS Queue size: 1223 | Đã quét xong: https://vnexpress.net/nguoi-my-manh-tay-chi-tieu-5087193.html
+2026-06-20 07:33:45,544 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/gan-60-quy-dau-tu-dang-ky-mua-co-phieu-ipo-cua-dien-may-xanh-5087096.html
+2026-06-20 07:33:46,072 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/gan-60-quy-dau-tu-dang-ky-mua-co-phieu-ipo-cua-dien-may-xanh-5087096.html | Link mới: 4 | Reward: 10.0
+2026-06-20 07:33:46,072 - BFSCrawler - INFO - BFS Queue size: 1224 | Đã quét xong: https://vnexpress.net/gan-60-quy-dau-tu-dang-ky-mua-co-phieu-ipo-cua-dien-may-xanh-5087096.html
+2026-06-20 07:33:46,072 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/bidv-co-chu-tich-va-tong-giam-doc-moi-5086967.html
+2026-06-20 07:33:46,515 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/bidv-co-chu-tich-va-tong-giam-doc-moi-5086967.html | Link mới: 5 | Reward: 10.0
+2026-06-20 07:33:46,515 - BFSCrawler - INFO - BFS Queue size: 1223 | Đã quét xong: https://vnexpress.net/bidv-co-chu-tich-va-tong-giam-doc-moi-5086967.html
+2026-06-20 07:33:46,515 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/kinh-doanh/tien-cua-toi
+2026-06-20 07:33:47,535 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/kinh-doanh/tien-cua-toi | Link mới: 48 | Reward: 10.0
+2026-06-20 07:33:47,535 - BFSCrawler - INFO - BFS Queue size: 1223 | Đã quét xong: https://vnexpress.net/kinh-doanh/tien-cua-toi
+2026-06-20 07:33:47,537 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/kinh-doanh-p2
+2026-06-20 07:33:48,062 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/kinh-doanh-p2 | Link mới: 43 | Reward: 10.0
+2026-06-20 07:33:48,062 - BFSCrawler - INFO - BFS Queue size: 1257 | Đã quét xong: https://vnexpress.net/kinh-doanh-p2
+2026-06-20 07:33:48,065 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/fed-giu-nguyen-lai-suat-5087016.html
+2026-06-20 07:33:48,578 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/fed-giu-nguyen-lai-suat-5087016.html | Link mới: 4 | Reward: 10.0
+2026-06-20 07:33:48,579 - BFSCrawler - INFO - BFS Queue size: 1285 | Đã quét xong: https://vnexpress.net/fed-giu-nguyen-lai-suat-5087016.html
+2026-06-20 07:33:48,579 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/gia-vang-the-gioi-tang-tro-lai-sau-phien-giam-manh-5087031.html
+2026-06-20 07:33:48,981 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/gia-vang-the-gioi-tang-tro-lai-sau-phien-giam-manh-5087031.html | Link mới: 6 | Reward: 10.0
+2026-06-20 07:33:48,981 - BFSCrawler - INFO - BFS Queue size: 1284 | Đã quét xong: https://vnexpress.net/gia-vang-the-gioi-tang-tro-lai-sau-phien-giam-manh-5087031.html
+2026-06-20 07:33:48,981 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/toan-cau-co-the-du-cung-dau-tho-dang-ke-nam-2027-5087312.html
+2026-06-20 07:33:49,562 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/toan-cau-co-the-du-cung-dau-tho-dang-ke-nam-2027-5087312.html | Link mới: 4 | Reward: 10.0
+2026-06-20 07:33:49,562 - BFSCrawler - INFO - BFS Queue size: 1284 | Đã quét xong: https://vnexpress.net/toan-cau-co-the-du-cung-dau-tho-dang-ke-nam-2027-5087312.html
+2026-06-20 07:33:49,562 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/toan-bo-hdqt-chung-khoan-thanh-cong-tu-nhiem-5087773.html
+2026-06-20 07:33:49,986 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/toan-bo-hdqt-chung-khoan-thanh-cong-tu-nhiem-5087773.html | Link mới: 5 | Reward: 10.0
+2026-06-20 07:33:49,986 - BFSCrawler - INFO - BFS Queue size: 1283 | Đã quét xong: https://vnexpress.net/toan-bo-hdqt-chung-khoan-thanh-cong-tu-nhiem-5087773.html
+2026-06-20 07:33:49,986 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/tp-hcm-day-nhanh-tai-cau-truc-cac-khu-cong-nghiep-5086842.html
+2026-06-20 07:33:50,399 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/tp-hcm-day-nhanh-tai-cau-truc-cac-khu-cong-nghiep-5086842.html | Link mới: 4 | Reward: 10.0
+2026-06-20 07:33:50,399 - BFSCrawler - INFO - BFS Queue size: 1283 | Đã quét xong: https://vnexpress.net/tp-hcm-day-nhanh-tai-cau-truc-cac-khu-cong-nghiep-5086842.html
+2026-06-20 07:33:50,399 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/vec-hop-tac-chien-luoc-voi-loat-doi-tac-trien-lam-hang-dau-the-gioi-5087404.html
+2026-06-20 07:33:50,802 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/vec-hop-tac-chien-luoc-voi-loat-doi-tac-trien-lam-hang-dau-the-gioi-5087404.html | Link mới: 1 | Reward: 10.0
+2026-06-20 07:33:50,802 - BFSCrawler - INFO - BFS Queue size: 1282 | Đã quét xong: https://vnexpress.net/vec-hop-tac-chien-luoc-voi-loat-doi-tac-trien-lam-hang-dau-the-gioi-5087404.html
+2026-06-20 07:33:50,802 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/v-green-hop-tac-evn-ha-noi-lap-10-000-tu-doi-pin-xe-may-dien-5087777.html
+2026-06-20 07:33:51,374 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/v-green-hop-tac-evn-ha-noi-lap-10-000-tu-doi-pin-xe-may-dien-5087777.html | Link mới: 4 | Reward: 10.0
+2026-06-20 07:33:51,374 - BFSCrawler - INFO - BFS Queue size: 1281 | Đã quét xong: https://vnexpress.net/v-green-hop-tac-evn-ha-noi-lap-10-000-tu-doi-pin-xe-may-dien-5087777.html
+2026-06-20 07:33:51,375 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/wgc-nhieu-ngan-hang-trung-uong-dua-vang-du-tru-ve-nuoc-5086864.html
+2026-06-20 07:33:51,843 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/wgc-nhieu-ngan-hang-trung-uong-dua-vang-du-tru-ve-nuoc-5086864.html | Link mới: 1 | Reward: 10.0
+2026-06-20 07:33:51,843 - BFSCrawler - INFO - BFS Queue size: 1280 | Đã quét xong: https://vnexpress.net/wgc-nhieu-ngan-hang-trung-uong-dua-vang-du-tru-ve-nuoc-5086864.html
+2026-06-20 07:33:51,843 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/nha-dau-tu-bat-dau-gom-bitcoin-5086736.html
+2026-06-20 07:33:52,279 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/nha-dau-tu-bat-dau-gom-bitcoin-5086736.html | Link mới: 6 | Reward: 10.0
+2026-06-20 07:33:52,279 - BFSCrawler - INFO - BFS Queue size: 1279 | Đã quét xong: https://vnexpress.net/nha-dau-tu-bat-dau-gom-bitcoin-5086736.html
+2026-06-20 07:33:52,280 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/gia-xang-dau-moi-nhat-hom-nay-18-6-5087231.html
+2026-06-20 07:33:52,849 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/gia-xang-dau-moi-nhat-hom-nay-18-6-5087231.html | Link mới: 3 | Reward: 10.0
+2026-06-20 07:33:52,849 - BFSCrawler - INFO - BFS Queue size: 1280 | Đã quét xong: https://vnexpress.net/gia-xang-dau-moi-nhat-hom-nay-18-6-5087231.html
+2026-06-20 07:33:52,849 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/nhom-co-phieu-vingroup-vuc-day-chung-khoan-5087295.html
+2026-06-20 07:33:53,247 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/nhom-co-phieu-vingroup-vuc-day-chung-khoan-5087295.html | Link mới: 7 | Reward: 10.0
+2026-06-20 07:33:53,247 - BFSCrawler - INFO - BFS Queue size: 1281 | Đã quét xong: https://vnexpress.net/nhom-co-phieu-vingroup-vuc-day-chung-khoan-5087295.html
+2026-06-20 07:33:53,248 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/kinh-doanh/doanh-nghiep
+2026-06-20 07:33:54,363 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/kinh-doanh/doanh-nghiep | Link mới: 45 | Reward: 10.0
+2026-06-20 07:33:54,363 - BFSCrawler - INFO - BFS Queue size: 1284 | Đã quét xong: https://vnexpress.net/kinh-doanh/doanh-nghiep
+2026-06-20 07:33:54,365 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/kinh-doanh/chung-khoan
+2026-06-20 07:33:55,921 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/kinh-doanh/chung-khoan | Link mới: 40 | Reward: 10.0
+2026-06-20 07:33:55,922 - BFSCrawler - INFO - BFS Queue size: 1303 | Đã quét xong: https://vnexpress.net/kinh-doanh/chung-khoan
+2026-06-20 07:33:55,923 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/deutsche-bank-chat-luong-doanh-nghiep-moi-la-dieu-thu-hut-von-ngoai-5087426.html
+2026-06-20 07:33:56,336 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/deutsche-bank-chat-luong-doanh-nghiep-moi-la-dieu-thu-hut-von-ngoai-5087426.html | Link mới: 5 | Reward: 10.0
+2026-06-20 07:33:56,336 - BFSCrawler - INFO - BFS Queue size: 1322 | Đã quét xong: https://vnexpress.net/deutsche-bank-chat-luong-doanh-nghiep-moi-la-dieu-thu-hut-von-ngoai-5087426.html
+2026-06-20 07:33:56,337 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/von-hoa-spacex-vuot-amazon-5086601.html
+2026-06-20 07:33:56,944 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/von-hoa-spacex-vuot-amazon-5086601.html | Link mới: 4 | Reward: 10.0
+2026-06-20 07:33:56,945 - BFSCrawler - INFO - BFS Queue size: 1321 | Đã quét xong: https://vnexpress.net/von-hoa-spacex-vuot-amazon-5086601.html
+2026-06-20 07:33:56,945 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/sieu-el-nino-de-doa-kinh-te-chau-a-5087811.html
+2026-06-20 07:33:57,521 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/sieu-el-nino-de-doa-kinh-te-chau-a-5087811.html | Link mới: 13 | Reward: 4.0
+2026-06-20 07:33:57,521 - BFSCrawler - INFO - BFS Queue size: 1320 | Đã quét xong: https://vnexpress.net/sieu-el-nino-de-doa-kinh-te-chau-a-5087811.html
+2026-06-20 07:33:57,522 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/dac-san-van-loay-hoay-tim-duong-vao-sieu-thi-5087263.html
+2026-06-20 07:33:57,954 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/dac-san-van-loay-hoay-tim-duong-vao-sieu-thi-5087263.html | Link mới: 1 | Reward: 10.0
+2026-06-20 07:33:57,954 - BFSCrawler - INFO - BFS Queue size: 1326 | Đã quét xong: https://vnexpress.net/dac-san-van-loay-hoay-tim-duong-vao-sieu-thi-5087263.html
+2026-06-20 07:33:57,954 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/doanh-nghiep-than-kho-vi-thu-tuc-moi-truong-chong-cheo-5087179.html
+2026-06-20 07:33:58,398 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/doanh-nghiep-than-kho-vi-thu-tuc-moi-truong-chong-cheo-5087179.html | Link mới: 0 | Reward: 10.0
+2026-06-20 07:33:58,398 - BFSCrawler - INFO - BFS Queue size: 1325 | Đã quét xong: https://vnexpress.net/doanh-nghiep-than-kho-vi-thu-tuc-moi-truong-chong-cheo-5087179.html
+2026-06-20 07:33:58,398 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/viet-nam-lan-dau-xuat-trung-an-lien-sang-nhat-5087348.html
+2026-06-20 07:33:58,825 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/viet-nam-lan-dau-xuat-trung-an-lien-sang-nhat-5087348.html | Link mới: 4 | Reward: 10.0
+2026-06-20 07:33:58,825 - BFSCrawler - INFO - BFS Queue size: 1324 | Đã quét xong: https://vnexpress.net/viet-nam-lan-dau-xuat-trung-an-lien-sang-nhat-5087348.html
+2026-06-20 07:33:58,825 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/gia-vang-giam-ve-gan-147-trieu-dong-5087558.html
+2026-06-20 07:33:59,378 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/gia-vang-giam-ve-gan-147-trieu-dong-5087558.html | Link mới: 5 | Reward: 10.0
+2026-06-20 07:33:59,378 - BFSCrawler - INFO - BFS Queue size: 1323 | Đã quét xong: https://vnexpress.net/gia-vang-giam-ve-gan-147-trieu-dong-5087558.html
+2026-06-20 07:33:59,378 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/vinamilk-la-hang-sua-viet-duy-nhat-vao-top-500-fortune-dong-nam-a-5087350.html
+2026-06-20 07:33:59,885 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/vinamilk-la-hang-sua-viet-duy-nhat-vao-top-500-fortune-dong-nam-a-5087350.html | Link mới: 3 | Reward: 10.0
+2026-06-20 07:33:59,885 - BFSCrawler - INFO - BFS Queue size: 1322 | Đã quét xong: https://vnexpress.net/vinamilk-la-hang-sua-viet-duy-nhat-vao-top-500-fortune-dong-nam-a-5087350.html
+2026-06-20 07:33:59,885 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/viet-nam-dat-muc-tieu-co-10-doanh-nghiep-cong-nghe-chien-luoc-ty-usd-5087216.html
+2026-06-20 07:34:00,385 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/viet-nam-dat-muc-tieu-co-10-doanh-nghiep-cong-nghe-chien-luoc-ty-usd-5087216.html | Link mới: 4 | Reward: 10.0
+2026-06-20 07:34:00,385 - BFSCrawler - INFO - BFS Queue size: 1321 | Đã quét xong: https://vnexpress.net/viet-nam-dat-muc-tieu-co-10-doanh-nghiep-cong-nghe-chien-luoc-ty-usd-5087216.html
+2026-06-20 07:34:00,385 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/cong-ty-phuc-vu-mat-dat-sai-gon-don-luc-cho-san-bay-long-thanh-5087349.html
+2026-06-20 07:34:00,819 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/cong-ty-phuc-vu-mat-dat-sai-gon-don-luc-cho-san-bay-long-thanh-5087349.html | Link mới: 3 | Reward: 10.0
+2026-06-20 07:34:00,819 - BFSCrawler - INFO - BFS Queue size: 1320 | Đã quét xong: https://vnexpress.net/cong-ty-phuc-vu-mat-dat-sai-gon-don-luc-cho-san-bay-long-thanh-5087349.html
+2026-06-20 07:34:00,819 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/kinh-doanh-p3
+2026-06-20 07:34:02,494 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/kinh-doanh-p3 | Link mới: 41 | Reward: 10.0
+2026-06-20 07:34:02,494 - BFSCrawler - INFO - BFS Queue size: 1319 | Đã quét xong: https://vnexpress.net/kinh-doanh-p3
+2026-06-20 07:34:02,496 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/kinh-doanh/ebank
+2026-06-20 07:34:03,650 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/kinh-doanh/ebank | Link mới: 46 | Reward: 10.0
+2026-06-20 07:34:03,650 - BFSCrawler - INFO - BFS Queue size: 1343 | Đã quét xong: https://vnexpress.net/kinh-doanh/ebank
+2026-06-20 07:34:03,653 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/infographics
+2026-06-20 07:34:04,262 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/infographics | Link mới: 28 | Reward: 10.0
+2026-06-20 07:34:04,262 - BFSCrawler - INFO - BFS Queue size: 1371 | Đã quét xong: https://vnexpress.net/infographics
+2026-06-20 07:34:04,264 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/thu-tuong-de-xuat-dua-nang-luong-thanh-tru-cot-hop-tac-asean-nga-5086961.html
+2026-06-20 07:34:04,753 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/thu-tuong-de-xuat-dua-nang-luong-thanh-tru-cot-hop-tac-asean-nga-5086961.html | Link mới: 4 | Reward: 10.0
+2026-06-20 07:34:04,753 - BFSCrawler - INFO - BFS Queue size: 1395 | Đã quét xong: https://vnexpress.net/thu-tuong-de-xuat-dua-nang-luong-thanh-tru-cot-hop-tac-asean-nga-5086961.html
+2026-06-20 07:34:04,754 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/kinh-doanh/hang-hoa
+2026-06-20 07:34:05,966 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/kinh-doanh/hang-hoa | Link mới: 37 | Reward: 10.0
+2026-06-20 07:34:05,966 - BFSCrawler - INFO - BFS Queue size: 1395 | Đã quét xong: https://vnexpress.net/kinh-doanh/hang-hoa
+2026-06-20 07:34:05,968 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/pho-thu-tuong-yeu-cau-sua-quy-dinh-hoan-xuat-canh-vi-no-thue-5087200.html
+2026-06-20 07:34:06,350 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/pho-thu-tuong-yeu-cau-sua-quy-dinh-hoan-xuat-canh-vi-no-thue-5087200.html | Link mới: 4 | Reward: 10.0
+2026-06-20 07:34:06,350 - BFSCrawler - INFO - BFS Queue size: 1410 | Đã quét xong: https://vnexpress.net/pho-thu-tuong-yeu-cau-sua-quy-dinh-hoan-xuat-canh-vi-no-thue-5087200.html
+2026-06-20 07:34:06,351 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/yen-nhat-xuong-gan-muc-thap-nhat-40-nam-5087739.html
+2026-06-20 07:34:06,913 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/yen-nhat-xuong-gan-muc-thap-nhat-40-nam-5087739.html | Link mới: 5 | Reward: 10.0
+2026-06-20 07:34:06,913 - BFSCrawler - INFO - BFS Queue size: 1410 | Đã quét xong: https://vnexpress.net/yen-nhat-xuong-gan-muc-thap-nhat-40-nam-5087739.html
+2026-06-20 07:34:06,914 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/anh
+2026-06-20 07:34:07,334 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/anh | Link mới: 27 | Reward: 10.0
+2026-06-20 07:34:07,335 - BFSCrawler - INFO - BFS Queue size: 1411 | Đã quét xong: https://vnexpress.net/anh
+2026-06-20 07:34:07,336 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/gia-vang-the-gioi-quay-dau-giam-5087485.html
+2026-06-20 07:34:07,774 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/gia-vang-the-gioi-quay-dau-giam-5087485.html | Link mới: 3 | Reward: 10.0
+2026-06-20 07:34:07,774 - BFSCrawler - INFO - BFS Queue size: 1413 | Đã quét xong: https://vnexpress.net/gia-vang-the-gioi-quay-dau-giam-5087485.html
+2026-06-20 07:34:07,774 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/chuyen-doi-so-tro-luc-tang-truong-du-lich-hue-5086059.html
+2026-06-20 07:34:08,225 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/chuyen-doi-so-tro-luc-tang-truong-du-lich-hue-5086059.html | Link mới: 10 | Reward: 4.0
+2026-06-20 07:34:08,225 - BFSCrawler - INFO - BFS Queue size: 1412 | Đã quét xong: https://vnexpress.net/chuyen-doi-so-tro-luc-tang-truong-du-lich-hue-5086059.html
+2026-06-20 07:34:08,226 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/chu-dau-tu-san-bay-long-thanh-du-bao-lai-thap-nhat-5-nam-5087103.html
+2026-06-20 07:34:08,862 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/chu-dau-tu-san-bay-long-thanh-du-bao-lai-thap-nhat-5-nam-5087103.html | Link mới: 1 | Reward: 10.0
+2026-06-20 07:34:08,862 - BFSCrawler - INFO - BFS Queue size: 1418 | Đã quét xong: https://vnexpress.net/chu-dau-tu-san-bay-long-thanh-du-bao-lai-thap-nhat-5-nam-5087103.html
+2026-06-20 07:34:08,862 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/nguoi-dan-chi-it-hon-cho-mam-cung-tet-doan-ngo-5087483.html
+2026-06-20 07:34:09,292 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/nguoi-dan-chi-it-hon-cho-mam-cung-tet-doan-ngo-5087483.html | Link mới: 0 | Reward: 10.0
+2026-06-20 07:34:09,292 - BFSCrawler - INFO - BFS Queue size: 1417 | Đã quét xong: https://vnexpress.net/nguoi-dan-chi-it-hon-cho-mam-cung-tet-doan-ngo-5087483.html
+2026-06-20 07:34:09,292 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/lien-bo-cong-thuong-tai-chinh-se-cong-bo-gia-co-so-xang-e10-5086618.html
+2026-06-20 07:34:09,686 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/lien-bo-cong-thuong-tai-chinh-se-cong-bo-gia-co-so-xang-e10-5086618.html | Link mới: 3 | Reward: 4.0
+2026-06-20 07:34:09,686 - BFSCrawler - INFO - BFS Queue size: 1416 | Đã quét xong: https://vnexpress.net/lien-bo-cong-thuong-tai-chinh-se-cong-bo-gia-co-so-xang-e10-5086618.html
+2026-06-20 07:34:09,686 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/cong-ty-me-ban-chuoi-pizza-hut-vi-kho-canh-tranh-5086691.html
+2026-06-20 07:34:10,284 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/cong-ty-me-ban-chuoi-pizza-hut-vi-kho-canh-tranh-5086691.html | Link mới: 2 | Reward: 10.0
+2026-06-20 07:34:10,285 - BFSCrawler - INFO - BFS Queue size: 1416 | Đã quét xong: https://vnexpress.net/cong-ty-me-ban-chuoi-pizza-hut-vi-kho-canh-tranh-5086691.html
+2026-06-20 07:34:10,285 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/kinh-doanh-p4
+2026-06-20 07:34:11,239 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/kinh-doanh-p4 | Link mới: 37 | Reward: 10.0
+2026-06-20 07:34:11,240 - BFSCrawler - INFO - BFS Queue size: 1415 | Đã quét xong: https://vnexpress.net/kinh-doanh-p4
+2026-06-20 07:34:11,242 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/ong-lon-nganh-cao-su-du-kien-doanh-thu-cao-ky-luc-5086769.html
+2026-06-20 07:34:11,789 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/ong-lon-nganh-cao-su-du-kien-doanh-thu-cao-ky-luc-5086769.html | Link mới: 0 | Reward: 10.0
+2026-06-20 07:34:11,789 - BFSCrawler - INFO - BFS Queue size: 1434 | Đã quét xong: https://vnexpress.net/ong-lon-nganh-cao-su-du-kien-doanh-thu-cao-ky-luc-5086769.html
+2026-06-20 07:34:11,789 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/tan-tao-khong-bi-pha-san-5086917.html
+2026-06-20 07:34:12,251 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/tan-tao-khong-bi-pha-san-5086917.html | Link mới: 0 | Reward: 10.0
+2026-06-20 07:34:12,251 - BFSCrawler - INFO - BFS Queue size: 1433 | Đã quét xong: https://vnexpress.net/tan-tao-khong-bi-pha-san-5086917.html
+2026-06-20 07:34:12,252 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/du-kien-noi-tran-von-ngan-han-cho-vay-trung-dai-han-len-40-5086889.html
+2026-06-20 07:34:12,835 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/du-kien-noi-tran-von-ngan-han-cho-vay-trung-dai-han-len-40-5086889.html | Link mới: 2 | Reward: 10.0
+2026-06-20 07:34:12,836 - BFSCrawler - INFO - BFS Queue size: 1432 | Đã quét xong: https://vnexpress.net/du-kien-noi-tran-von-ngan-han-cho-vay-trung-dai-han-len-40-5086889.html
+2026-06-20 07:34:12,836 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/techcombank-xay-dung-ban-do-kham-pha-viet-nam-ruc-ro-ket-noi-doanh-nghiep-5087550.html
+2026-06-20 07:34:13,329 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/techcombank-xay-dung-ban-do-kham-pha-viet-nam-ruc-ro-ket-noi-doanh-nghiep-5087550.html | Link mới: 0 | Reward: 10.0
+2026-06-20 07:34:13,330 - BFSCrawler - INFO - BFS Queue size: 1431 | Đã quét xong: https://vnexpress.net/techcombank-xay-dung-ban-do-kham-pha-viet-nam-ruc-ro-ket-noi-doanh-nghiep-5087550.html
+2026-06-20 07:34:13,431 - CrawlerEnv - INFO - Đã đóng browser.
+2026-06-20 07:34:13,449 - Evaluate - INFO - BFS hoàn thành trong 60.34s | Băng thông: 103.87 MB | Tổng Reward: 935.9 | Tổng số trang cào: 100
+2026-06-20 07:34:13,449 - Evaluate - INFO - 
+==================================================
+--- Chạy Focused Crawler ---
+==================================================
+2026-06-20 07:34:13,449 - CrawlerEnv - INFO - Đang khởi tạo Playwright browser...
+2026-06-20 07:34:13,913 - CrawlerEnv - INFO - Đã reset môi trường (visited_urls, bandwidth).
+2026-06-20 07:34:13,913 - CrawlerEnv - INFO - Đang cào (Depth 0): https://vnexpress.net
+2026-06-20 07:34:14,457 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net | Link mới: 51 | Reward: 10.0
+2026-06-20 07:34:14,457 - FocusedCrawler - INFO - Focused Queue size: 0 | Điểm heuristic: 0 | Cào: https://vnexpress.net
+2026-06-20 07:34:14,458 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/kinh-doanh
+2026-06-20 07:34:15,177 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/kinh-doanh | Link mới: 90 | Reward: 10.0
+2026-06-20 07:34:15,177 - FocusedCrawler - INFO - Focused Queue size: 50 | Điểm heuristic: 0 | Cào: https://vnexpress.net/kinh-doanh
+2026-06-20 07:34:15,177 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/oto-xe-may
+2026-06-20 07:34:15,731 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/oto-xe-may | Link mới: 107 | Reward: 10.0
+2026-06-20 07:34:15,732 - FocusedCrawler - INFO - Focused Queue size: 115 | Điểm heuristic: 0 | Cào: https://vnexpress.net/oto-xe-may
+2026-06-20 07:34:15,733 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/giao-duc
+2026-06-20 07:34:16,509 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/giao-duc | Link mới: 88 | Reward: 10.0
+2026-06-20 07:34:16,509 - FocusedCrawler - INFO - Focused Queue size: 195 | Điểm heuristic: 0 | Cào: https://vnexpress.net/giao-duc
+2026-06-20 07:34:16,510 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/vne-go
+2026-06-20 07:34:17,300 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/vne-go | Link mới: 23 | Reward: 4.0
+2026-06-20 07:34:17,300 - FocusedCrawler - INFO - Focused Queue size: 252 | Điểm heuristic: 0 | Cào: https://vnexpress.net/vne-go
+2026-06-20 07:34:17,300 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/khoa-hoc-cong-nghe
+2026-06-20 07:34:17,851 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/khoa-hoc-cong-nghe | Link mới: 82 | Reward: 10.0
+2026-06-20 07:34:17,852 - FocusedCrawler - INFO - Focused Queue size: 273 | Điểm heuristic: 0 | Cào: https://vnexpress.net/khoa-hoc-cong-nghe
+2026-06-20 07:34:17,854 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/thoi-su
+2026-06-20 07:34:18,389 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/thoi-su | Link mới: 94 | Reward: 10.0
+2026-06-20 07:34:18,389 - FocusedCrawler - INFO - Focused Queue size: 330 | Điểm heuristic: 0 | Cào: https://vnexpress.net/thoi-su
+2026-06-20 07:34:18,390 - CrawlerEnv - INFO - Đang cào (Depth 1): https://e.vnexpress.net/
+2026-06-20 07:34:19,213 - CrawlerEnv - INFO - Cào thành công: https://e.vnexpress.net/ | Link mới: 115 | Reward: -0.1
+2026-06-20 07:34:19,213 - FocusedCrawler - INFO - Focused Queue size: 397 | Điểm heuristic: 0 | Cào: https://e.vnexpress.net/
+2026-06-20 07:34:19,216 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/tp-hcm-mien-nhiem-mot-pho-chu-tich-ubnd-5087683.html
+2026-06-20 07:34:19,669 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/tp-hcm-mien-nhiem-mot-pho-chu-tich-ubnd-5087683.html | Link mới: 19 | Reward: 10.0
+2026-06-20 07:34:19,670 - FocusedCrawler - INFO - Focused Queue size: 510 | Điểm heuristic: 0 | Cào: https://vnexpress.net/tp-hcm-mien-nhiem-mot-pho-chu-tich-ubnd-5087683.html
+2026-06-20 07:34:19,670 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/goc-nhin
+2026-06-20 07:34:20,037 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/goc-nhin | Link mới: 66 | Reward: 10.0
+2026-06-20 07:34:20,037 - FocusedCrawler - INFO - Focused Queue size: 509 | Điểm heuristic: 0 | Cào: https://vnexpress.net/goc-nhin
+2026-06-20 07:34:20,039 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/tam-su
+2026-06-20 07:34:20,874 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/tam-su | Link mới: 47 | Reward: 10.0
+2026-06-20 07:34:20,874 - FocusedCrawler - INFO - Focused Queue size: 552 | Điểm heuristic: 0 | Cào: https://vnexpress.net/tam-su
+2026-06-20 07:34:20,875 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/khac-biet-giua-thoa-thuan-iran-cua-ong-trump-va-ong-obama-5087486.html
+2026-06-20 07:34:21,362 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/khac-biet-giua-thoa-thuan-iran-cua-ong-trump-va-ong-obama-5087486.html | Link mới: 8 | Reward: 2.0
+2026-06-20 07:34:21,362 - FocusedCrawler - INFO - Focused Queue size: 579 | Điểm heuristic: 0 | Cào: https://vnexpress.net/khac-biet-giua-thoa-thuan-iran-cua-ong-trump-va-ong-obama-5087486.html
+2026-06-20 07:34:21,362 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/23-nam-giai-ma-nguoi-chi-huy-biet-dong-sai-gon-5080206.html
+2026-06-20 07:34:21,826 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/23-nam-giai-ma-nguoi-chi-huy-biet-dong-sai-gon-5080206.html | Link mới: 20 | Reward: 10.0
+2026-06-20 07:34:21,826 - FocusedCrawler - INFO - Focused Queue size: 584 | Điểm heuristic: 0 | Cào: https://vnexpress.net/23-nam-giai-ma-nguoi-chi-huy-biet-dong-sai-gon-5080206.html
+2026-06-20 07:34:21,827 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/my-thang-lien-hai-tran-o-world-cup-sau-96-nam-5087834.html
+2026-06-20 07:34:22,537 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/my-thang-lien-hai-tran-o-world-cup-sau-96-nam-5087834.html | Link mới: 12 | Reward: 4.0
+2026-06-20 07:34:22,537 - FocusedCrawler - INFO - Focused Queue size: 584 | Điểm heuristic: 0 | Cào: https://vnexpress.net/my-thang-lien-hai-tran-o-world-cup-sau-96-nam-5087834.html
+2026-06-20 07:34:22,537 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/ba-lan-thu-hoi-huan-chuong-tung-trao-cho-tong-thong-ukraine-5087835.html
+2026-06-20 07:34:23,028 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/ba-lan-thu-hoi-huan-chuong-tung-trao-cho-tong-thong-ukraine-5087835.html | Link mới: 19 | Reward: 10.0
+2026-06-20 07:34:23,028 - FocusedCrawler - INFO - Focused Queue size: 592 | Điểm heuristic: 0 | Cào: https://vnexpress.net/ba-lan-thu-hoi-huan-chuong-tung-trao-cho-tong-thong-ukraine-5087835.html
+2026-06-20 07:34:23,028 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/y-kien
+2026-06-20 07:34:23,569 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/y-kien | Link mới: 62 | Reward: 10.0
+2026-06-20 07:34:23,570 - FocusedCrawler - INFO - Focused Queue size: 591 | Điểm heuristic: 0 | Cào: https://vnexpress.net/y-kien
+2026-06-20 07:34:23,571 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/bat-dong-san
+2026-06-20 07:34:24,261 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/bat-dong-san | Link mới: 90 | Reward: 10.0
+2026-06-20 07:34:24,261 - FocusedCrawler - INFO - Focused Queue size: 634 | Điểm heuristic: 0 | Cào: https://vnexpress.net/bat-dong-san
+2026-06-20 07:34:24,264 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/go-vuong-chung-nhan-cho-ghe-an-toan-tre-em-5087674.html
+2026-06-20 07:34:24,678 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/go-vuong-chung-nhan-cho-ghe-an-toan-tre-em-5087674.html | Link mới: 18 | Reward: 10.0
+2026-06-20 07:34:24,678 - FocusedCrawler - INFO - Focused Queue size: 705 | Điểm heuristic: 0 | Cào: https://vnexpress.net/go-vuong-chung-nhan-cho-ghe-an-toan-tre-em-5087674.html
+2026-06-20 07:34:24,679 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/thu-gian
+2026-06-20 07:34:25,288 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/thu-gian | Link mới: 63 | Reward: 10.0
+2026-06-20 07:34:25,288 - FocusedCrawler - INFO - Focused Queue size: 704 | Điểm heuristic: 0 | Cào: https://vnexpress.net/thu-gian
+2026-06-20 07:34:25,290 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/bi-quyet-hoc-cua-thu-khoa-lop-10-ha-noi-2026-5087821.html
+2026-06-20 07:34:25,834 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/bi-quyet-hoc-cua-thu-khoa-lop-10-ha-noi-2026-5087821.html | Link mới: 17 | Reward: 10.0
+2026-06-20 07:34:25,834 - FocusedCrawler - INFO - Focused Queue size: 750 | Điểm heuristic: 0 | Cào: https://vnexpress.net/bi-quyet-hoc-cua-thu-khoa-lop-10-ha-noi-2026-5087821.html
+2026-06-20 07:34:25,835 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/hong-anh-17-nam-khong-co-con-vo-chong-toi-van-hanh-phuc-5087072.html
+2026-06-20 07:34:26,279 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/hong-anh-17-nam-khong-co-con-vo-chong-toi-van-hanh-phuc-5087072.html | Link mới: 22 | Reward: 10.0
+2026-06-20 07:34:26,279 - FocusedCrawler - INFO - Focused Queue size: 749 | Điểm heuristic: 0 | Cào: https://vnexpress.net/hong-anh-17-nam-khong-co-con-vo-chong-toi-van-hanh-phuc-5087072.html
+2026-06-20 07:34:26,280 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/
+2026-06-20 07:34:26,750 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/ | Link mới: 33 | Reward: 10.0
+2026-06-20 07:34:26,750 - FocusedCrawler - INFO - Focused Queue size: 754 | Điểm heuristic: 0 | Cào: https://vnexpress.net/
+2026-06-20 07:34:26,750 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/viet-nam-tang-hoi-nhap-phap-ly-quoc-te-khi-co-tham-phan-tai-toa-an-quoc-te-ve-luat-bien-5087808.html
+2026-06-20 07:34:27,319 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/viet-nam-tang-hoi-nhap-phap-ly-quoc-te-khi-co-tham-phan-tai-toa-an-quoc-te-ve-luat-bien-5087808.html | Link mới: 15 | Reward: 10.0
+2026-06-20 07:34:27,319 - FocusedCrawler - INFO - Focused Queue size: 753 | Điểm heuristic: 0 | Cào: https://vnexpress.net/viet-nam-tang-hoi-nhap-phap-ly-quoc-te-khi-co-tham-phan-tai-toa-an-quoc-te-ve-luat-bien-5087808.html
+2026-06-20 07:34:27,319 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/doi-song
+2026-06-20 07:34:27,802 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/doi-song | Link mới: 66 | Reward: 10.0
+2026-06-20 07:34:27,802 - FocusedCrawler - INFO - Focused Queue size: 752 | Điểm heuristic: 0 | Cào: https://vnexpress.net/doi-song
+2026-06-20 07:34:27,804 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/phap-luat
+2026-06-20 07:34:28,494 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/phap-luat | Link mới: 67 | Reward: 10.0
+2026-06-20 07:34:28,494 - FocusedCrawler - INFO - Focused Queue size: 802 | Điểm heuristic: 0 | Cào: https://vnexpress.net/phap-luat
+2026-06-20 07:34:28,497 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/the-thao
+2026-06-20 07:34:29,174 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/the-thao | Link mới: 76 | Reward: 10.0
+2026-06-20 07:34:29,174 - FocusedCrawler - INFO - Focused Queue size: 853 | Điểm heuristic: 0 | Cào: https://vnexpress.net/the-thao
+2026-06-20 07:34:29,177 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/thu-khoa-thi-lop-10-cua-ha-noi-dat-29-75-30-diem-5087800.html
+2026-06-20 07:34:29,579 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/thu-khoa-thi-lop-10-cua-ha-noi-dat-29-75-30-diem-5087800.html | Link mới: 16 | Reward: 10.0
+2026-06-20 07:34:29,579 - FocusedCrawler - INFO - Focused Queue size: 911 | Điểm heuristic: 0 | Cào: https://vnexpress.net/thu-khoa-thi-lop-10-cua-ha-noi-dat-29-75-30-diem-5087800.html
+2026-06-20 07:34:29,579 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/dap-an-cau-hoi-steve-jobs-viet-nam-trong-de-van-tot-nghiep-thpt-5087784.html
+2026-06-20 07:34:30,029 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/dap-an-cau-hoi-steve-jobs-viet-nam-trong-de-van-tot-nghiep-thpt-5087784.html | Link mới: 12 | Reward: 10.0
+2026-06-20 07:34:30,029 - FocusedCrawler - INFO - Focused Queue size: 910 | Điểm heuristic: 0 | Cào: https://vnexpress.net/dap-an-cau-hoi-steve-jobs-viet-nam-trong-de-van-tot-nghiep-thpt-5087784.html
+2026-06-20 07:34:30,030 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/tac-gia/to-kien-1990.html
+2026-06-20 07:34:30,665 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/tac-gia/to-kien-1990.html | Link mới: 38 | Reward: 10.0
+2026-06-20 07:34:30,665 - FocusedCrawler - INFO - Focused Queue size: 910 | Điểm heuristic: 0 | Cào: https://vnexpress.net/tac-gia/to-kien-1990.html
+2026-06-20 07:34:30,666 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/tp-hcm-dang-tim-ho-chon-900-liet-si-nhu-the-nao-5087817.html
+2026-06-20 07:34:31,128 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/tp-hcm-dang-tim-ho-chon-900-liet-si-nhu-the-nao-5087817.html | Link mới: 22 | Reward: 4.0
+2026-06-20 07:34:31,128 - FocusedCrawler - INFO - Focused Queue size: 927 | Điểm heuristic: 0 | Cào: https://vnexpress.net/tp-hcm-dang-tim-ho-chon-900-liet-si-nhu-the-nao-5087817.html
+2026-06-20 07:34:31,129 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/cuu-chu-tich-phuong-linh-an-vu-bao-ke-xay-nha-trai-phep-o-ha-noi-5087794.html
+2026-06-20 07:34:31,698 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/cuu-chu-tich-phuong-linh-an-vu-bao-ke-xay-nha-trai-phep-o-ha-noi-5087794.html | Link mới: 12 | Reward: 10.0
+2026-06-20 07:34:31,698 - FocusedCrawler - INFO - Focused Queue size: 926 | Điểm heuristic: 0 | Cào: https://vnexpress.net/cuu-chu-tich-phuong-linh-an-vu-bao-ke-xay-nha-trai-phep-o-ha-noi-5087794.html
+2026-06-20 07:34:31,698 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/tin-tuc-24h
+2026-06-20 07:34:32,329 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/tin-tuc-24h | Link mới: 35 | Reward: 10.0
+2026-06-20 07:34:32,329 - FocusedCrawler - INFO - Focused Queue size: 925 | Điểm heuristic: 0 | Cào: https://vnexpress.net/tin-tuc-24h
+2026-06-20 07:34:32,330 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/ai-giu-mat-guong-tay-ho-5087447.html
+2026-06-20 07:34:32,824 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/ai-giu-mat-guong-tay-ho-5087447.html | Link mới: 13 | Reward: 10.0
+2026-06-20 07:34:32,824 - FocusedCrawler - INFO - Focused Queue size: 933 | Điểm heuristic: 0 | Cào: https://vnexpress.net/ai-giu-mat-guong-tay-ho-5087447.html
+2026-06-20 07:34:32,824 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/thu-tuong-italy-tuc-gian-bac-tin-xin-chup-anh-cung-ong-trump-5087788.html
+2026-06-20 07:34:33,242 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/thu-tuong-italy-tuc-gian-bac-tin-xin-chup-anh-cung-ong-trump-5087788.html | Link mới: 11 | Reward: 10.0
+2026-06-20 07:34:33,242 - FocusedCrawler - INFO - Focused Queue size: 932 | Điểm heuristic: 0 | Cào: https://vnexpress.net/thu-tuong-italy-tuc-gian-bac-tin-xin-chup-anh-cung-ong-trump-5087788.html
+2026-06-20 07:34:33,242 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/dat-nuoc-khong-the-vuon-minh-neu-thieu-bao-chi-tien-phong-5087754.html
+2026-06-20 07:34:33,687 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/dat-nuoc-khong-the-vuon-minh-neu-thieu-bao-chi-tien-phong-5087754.html | Link mới: 13 | Reward: 10.0
+2026-06-20 07:34:33,687 - FocusedCrawler - INFO - Focused Queue size: 931 | Điểm heuristic: 0 | Cào: https://vnexpress.net/dat-nuoc-khong-the-vuon-minh-neu-thieu-bao-chi-tien-phong-5087754.html
+2026-06-20 07:34:33,688 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/truc-tiep-brazil-vs-haiti-5087838.html
+2026-06-20 07:34:34,399 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/truc-tiep-brazil-vs-haiti-5087838.html | Link mới: 15 | Reward: 6.0
+2026-06-20 07:34:34,399 - FocusedCrawler - INFO - Focused Queue size: 931 | Điểm heuristic: 0 | Cào: https://vnexpress.net/truc-tiep-brazil-vs-haiti-5087838.html
+2026-06-20 07:34:34,400 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/suc-khoe
+2026-06-20 07:34:34,962 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/suc-khoe | Link mới: 68 | Reward: 10.0
+2026-06-20 07:34:34,962 - FocusedCrawler - INFO - Focused Queue size: 936 | Điểm heuristic: 0 | Cào: https://vnexpress.net/suc-khoe
+2026-06-20 07:34:34,965 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/diem-chuan-lop-10-nam-2026-ha-noi-o-tat-ca-122-truong-cong-lap-chi-tiet-nhat-5086370.html
+2026-06-20 07:34:35,627 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/diem-chuan-lop-10-nam-2026-ha-noi-o-tat-ca-122-truong-cong-lap-chi-tiet-nhat-5086370.html | Link mới: 13 | Reward: 10.0
+2026-06-20 07:34:35,628 - FocusedCrawler - INFO - Focused Queue size: 988 | Điểm heuristic: 0 | Cào: https://vnexpress.net/diem-chuan-lop-10-nam-2026-ha-noi-o-tat-ca-122-truong-cong-lap-chi-tiet-nhat-5086370.html
+2026-06-20 07:34:35,628 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/co-gai-vinh-long-5-nam-cua-do-chang-trai-duc-5084773.html
+2026-06-20 07:34:36,110 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/co-gai-vinh-long-5-nam-cua-do-chang-trai-duc-5084773.html | Link mới: 11 | Reward: 10.0
+2026-06-20 07:34:36,110 - FocusedCrawler - INFO - Focused Queue size: 987 | Điểm heuristic: 0 | Cào: https://vnexpress.net/co-gai-vinh-long-5-nam-cua-do-chang-trai-duc-5084773.html
+2026-06-20 07:34:36,110 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/tiktoker-nhat-duy-nhat-hoang-bi-phat-9-nam-tu-5087778.html
+2026-06-20 07:34:36,516 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/tiktoker-nhat-duy-nhat-hoang-bi-phat-9-nam-tu-5087778.html | Link mới: 10 | Reward: 10.0
+2026-06-20 07:34:36,516 - FocusedCrawler - INFO - Focused Queue size: 986 | Điểm heuristic: 0 | Cào: https://vnexpress.net/tiktoker-nhat-duy-nhat-hoang-bi-phat-9-nam-tu-5087778.html
+2026-06-20 07:34:36,517 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/zalo-ra-soat-tai-khoan-dang-ky-bang-so-dien-thoai-bi-thu-hoi-5087616.html
+2026-06-20 07:34:36,963 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/zalo-ra-soat-tai-khoan-dang-ky-bang-so-dien-thoai-bi-thu-hoi-5087616.html | Link mới: 13 | Reward: 10.0
+2026-06-20 07:34:36,963 - FocusedCrawler - INFO - Focused Queue size: 985 | Điểm heuristic: 0 | Cào: https://vnexpress.net/zalo-ra-soat-tai-khoan-dang-ky-bang-so-dien-thoai-bi-thu-hoi-5087616.html
+2026-06-20 07:34:36,964 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/israel-hezbollah-nhat-tri-ngung-ban-5087793.html
+2026-06-20 07:34:37,551 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/israel-hezbollah-nhat-tri-ngung-ban-5087793.html | Link mới: 11 | Reward: 10.0
+2026-06-20 07:34:37,551 - FocusedCrawler - INFO - Focused Queue size: 986 | Điểm heuristic: 0 | Cào: https://vnexpress.net/israel-hezbollah-nhat-tri-ngung-ban-5087793.html
+2026-06-20 07:34:37,551 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/chu-de/thanh-pho-ho-chi-minh-2091
+2026-06-20 07:34:38,090 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/chu-de/thanh-pho-ho-chi-minh-2091 | Link mới: 26 | Reward: 10.0
+2026-06-20 07:34:38,090 - FocusedCrawler - INFO - Focused Queue size: 985 | Điểm heuristic: 0 | Cào: https://vnexpress.net/chu-de/thanh-pho-ho-chi-minh-2091
+2026-06-20 07:34:38,092 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/du-lich
+2026-06-20 07:34:38,674 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/du-lich | Link mới: 79 | Reward: 10.0
+2026-06-20 07:34:38,674 - FocusedCrawler - INFO - Focused Queue size: 993 | Điểm heuristic: 0 | Cào: https://vnexpress.net/du-lich
+2026-06-20 07:34:38,678 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/dap-an-chinh-thuc-tat-ca-mon-thi-tot-nghiep-thpt-2026-cua-bo-giao-duc-va-dao-tao-5086438.html
+2026-06-20 07:34:39,271 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/dap-an-chinh-thuc-tat-ca-mon-thi-tot-nghiep-thpt-2026-cua-bo-giao-duc-va-dao-tao-5086438.html | Link mới: 9 | Reward: 10.0
+2026-06-20 07:34:39,271 - FocusedCrawler - INFO - Focused Queue size: 1062 | Điểm heuristic: 0 | Cào: https://vnexpress.net/dap-an-chinh-thuc-tat-ca-mon-thi-tot-nghiep-thpt-2026-cua-bo-giao-duc-va-dao-tao-5086438.html
+2026-06-20 07:34:39,271 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/doi-tuyen-bo-dao-nha-nguy-co-chia-re-vi-ronaldo-5087744.html
+2026-06-20 07:34:39,768 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/doi-tuyen-bo-dao-nha-nguy-co-chia-re-vi-ronaldo-5087744.html | Link mới: 18 | Reward: 4.0
+2026-06-20 07:34:39,768 - FocusedCrawler - INFO - Focused Queue size: 1061 | Điểm heuristic: 0 | Cào: https://vnexpress.net/doi-tuyen-bo-dao-nha-nguy-co-chia-re-vi-ronaldo-5087744.html
+2026-06-20 07:34:39,769 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/the-gioi
+2026-06-20 07:34:40,262 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/the-gioi | Link mới: 58 | Reward: 10.0
+2026-06-20 07:34:40,263 - FocusedCrawler - INFO - Focused Queue size: 1069 | Điểm heuristic: 0 | Cào: https://vnexpress.net/the-gioi
+2026-06-20 07:34:40,266 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/chu-de/thanh-pho-ha-noi-2056
+2026-06-20 07:34:40,836 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/chu-de/thanh-pho-ha-noi-2056 | Link mới: 26 | Reward: 10.0
+2026-06-20 07:34:40,836 - FocusedCrawler - INFO - Focused Queue size: 1117 | Điểm heuristic: 0 | Cào: https://vnexpress.net/chu-de/thanh-pho-ha-noi-2056
+2026-06-20 07:34:40,838 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/lich-van-nien
+2026-06-20 07:34:41,337 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/lich-van-nien | Link mới: 5 | Reward: 10.0
+2026-06-20 07:34:41,338 - FocusedCrawler - INFO - Focused Queue size: 1123 | Điểm heuristic: 0 | Cào: https://vnexpress.net/lich-van-nien
+2026-06-20 07:34:41,338 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/giai-tri
+2026-06-20 07:34:41,930 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/giai-tri | Link mới: 61 | Reward: 10.0
+2026-06-20 07:34:41,930 - FocusedCrawler - INFO - Focused Queue size: 1122 | Điểm heuristic: 0 | Cào: https://vnexpress.net/giai-tri
+2026-06-20 07:34:41,933 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/myvne
+2026-06-20 07:34:42,775 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/myvne | Link mới: 3 | Reward: 10.0
+2026-06-20 07:34:42,775 - FocusedCrawler - INFO - Focused Queue size: 1175 | Điểm heuristic: 0 | Cào: https://vnexpress.net/myvne
+2026-06-20 07:34:42,775 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/cuc-dien-anh-canh-bao-tinh-trang-qua-nhieu-phim-kinh-di-5087810.html
+2026-06-20 07:34:43,358 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/cuc-dien-anh-canh-bao-tinh-trang-qua-nhieu-phim-kinh-di-5087810.html | Link mới: 6 | Reward: 10.0
+2026-06-20 07:34:43,358 - FocusedCrawler - INFO - Focused Queue size: 1174 | Điểm heuristic: 0 | Cào: https://vnexpress.net/cuc-dien-anh-canh-bao-tinh-trang-qua-nhieu-phim-kinh-di-5087810.html
+2026-06-20 07:34:43,359 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/the-gioi-thieu-hut-1-15-ty-thung-dau-trong-xung-dot-trung-dong-5087768.html
+2026-06-20 07:34:43,836 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/the-gioi-thieu-hut-1-15-ty-thung-dau-trong-xung-dot-trung-dong-5087768.html | Link mới: 4 | Reward: 10.0
+2026-06-20 07:34:43,836 - FocusedCrawler - INFO - Focused Queue size: 1175 | Điểm heuristic: 0 | Cào: https://vnexpress.net/the-gioi-thieu-hut-1-15-ty-thung-dau-trong-xung-dot-trung-dong-5087768.html
+2026-06-20 07:34:43,837 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/nguoi-my-manh-tay-chi-tieu-5087193.html
+2026-06-20 07:34:44,274 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/nguoi-my-manh-tay-chi-tieu-5087193.html | Link mới: 4 | Reward: 10.0
+2026-06-20 07:34:44,274 - FocusedCrawler - INFO - Focused Queue size: 1174 | Điểm heuristic: 0 | Cào: https://vnexpress.net/nguoi-my-manh-tay-chi-tieu-5087193.html
+2026-06-20 07:34:44,275 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/gan-60-quy-dau-tu-dang-ky-mua-co-phieu-ipo-cua-dien-may-xanh-5087096.html
+2026-06-20 07:34:44,867 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/gan-60-quy-dau-tu-dang-ky-mua-co-phieu-ipo-cua-dien-may-xanh-5087096.html | Link mới: 1 | Reward: 10.0
+2026-06-20 07:34:44,868 - FocusedCrawler - INFO - Focused Queue size: 1175 | Điểm heuristic: 0 | Cào: https://vnexpress.net/gan-60-quy-dau-tu-dang-ky-mua-co-phieu-ipo-cua-dien-may-xanh-5087096.html
+2026-06-20 07:34:44,868 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/bidv-co-chu-tich-va-tong-giam-doc-moi-5086967.html
+2026-06-20 07:34:45,308 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/bidv-co-chu-tich-va-tong-giam-doc-moi-5086967.html | Link mới: 5 | Reward: 10.0
+2026-06-20 07:34:45,308 - FocusedCrawler - INFO - Focused Queue size: 1174 | Điểm heuristic: 0 | Cào: https://vnexpress.net/bidv-co-chu-tich-va-tong-giam-doc-moi-5086967.html
+2026-06-20 07:34:45,308 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/kinh-doanh/tien-cua-toi
+2026-06-20 07:34:46,397 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/kinh-doanh/tien-cua-toi | Link mới: 45 | Reward: 10.0
+2026-06-20 07:34:46,398 - FocusedCrawler - INFO - Focused Queue size: 1174 | Điểm heuristic: 0 | Cào: https://vnexpress.net/kinh-doanh/tien-cua-toi
+2026-06-20 07:34:46,400 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/kinh-doanh-p2
+2026-06-20 07:34:47,025 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/kinh-doanh-p2 | Link mới: 43 | Reward: 10.0
+2026-06-20 07:34:47,025 - FocusedCrawler - INFO - Focused Queue size: 1208 | Điểm heuristic: 0 | Cào: https://vnexpress.net/kinh-doanh-p2
+2026-06-20 07:34:47,028 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/fed-giu-nguyen-lai-suat-5087016.html
+2026-06-20 07:34:47,736 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/fed-giu-nguyen-lai-suat-5087016.html | Link mới: 1 | Reward: 10.0
+2026-06-20 07:34:47,736 - FocusedCrawler - INFO - Focused Queue size: 1236 | Điểm heuristic: 0 | Cào: https://vnexpress.net/fed-giu-nguyen-lai-suat-5087016.html
+2026-06-20 07:34:47,736 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/gia-vang-the-gioi-tang-tro-lai-sau-phien-giam-manh-5087031.html
+2026-06-20 07:34:48,136 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/gia-vang-the-gioi-tang-tro-lai-sau-phien-giam-manh-5087031.html | Link mới: 6 | Reward: 10.0
+2026-06-20 07:34:48,136 - FocusedCrawler - INFO - Focused Queue size: 1235 | Điểm heuristic: 0 | Cào: https://vnexpress.net/gia-vang-the-gioi-tang-tro-lai-sau-phien-giam-manh-5087031.html
+2026-06-20 07:34:48,137 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/toan-cau-co-the-du-cung-dau-tho-dang-ke-nam-2027-5087312.html
+2026-06-20 07:34:48,568 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/toan-cau-co-the-du-cung-dau-tho-dang-ke-nam-2027-5087312.html | Link mới: 4 | Reward: 10.0
+2026-06-20 07:34:48,568 - FocusedCrawler - INFO - Focused Queue size: 1236 | Điểm heuristic: 0 | Cào: https://vnexpress.net/toan-cau-co-the-du-cung-dau-tho-dang-ke-nam-2027-5087312.html
+2026-06-20 07:34:48,568 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/toan-bo-hdqt-chung-khoan-thanh-cong-tu-nhiem-5087773.html
+2026-06-20 07:34:49,160 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/toan-bo-hdqt-chung-khoan-thanh-cong-tu-nhiem-5087773.html | Link mới: 5 | Reward: 10.0
+2026-06-20 07:34:49,160 - FocusedCrawler - INFO - Focused Queue size: 1235 | Điểm heuristic: 0 | Cào: https://vnexpress.net/toan-bo-hdqt-chung-khoan-thanh-cong-tu-nhiem-5087773.html
+2026-06-20 07:34:49,160 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/tp-hcm-day-nhanh-tai-cau-truc-cac-khu-cong-nghiep-5086842.html
+2026-06-20 07:34:49,569 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/tp-hcm-day-nhanh-tai-cau-truc-cac-khu-cong-nghiep-5086842.html | Link mới: 4 | Reward: 10.0
+2026-06-20 07:34:49,569 - FocusedCrawler - INFO - Focused Queue size: 1235 | Điểm heuristic: 0 | Cào: https://vnexpress.net/tp-hcm-day-nhanh-tai-cau-truc-cac-khu-cong-nghiep-5086842.html
+2026-06-20 07:34:49,570 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/vec-hop-tac-chien-luoc-voi-loat-doi-tac-trien-lam-hang-dau-the-gioi-5087404.html
+2026-06-20 07:34:50,005 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/vec-hop-tac-chien-luoc-voi-loat-doi-tac-trien-lam-hang-dau-the-gioi-5087404.html | Link mới: 1 | Reward: 10.0
+2026-06-20 07:34:50,005 - FocusedCrawler - INFO - Focused Queue size: 1234 | Điểm heuristic: 0 | Cào: https://vnexpress.net/vec-hop-tac-chien-luoc-voi-loat-doi-tac-trien-lam-hang-dau-the-gioi-5087404.html
+2026-06-20 07:34:50,005 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/v-green-hop-tac-evn-ha-noi-lap-10-000-tu-doi-pin-xe-may-dien-5087777.html
+2026-06-20 07:34:50,407 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/v-green-hop-tac-evn-ha-noi-lap-10-000-tu-doi-pin-xe-may-dien-5087777.html | Link mới: 4 | Reward: 10.0
+2026-06-20 07:34:50,407 - FocusedCrawler - INFO - Focused Queue size: 1233 | Điểm heuristic: 0 | Cào: https://vnexpress.net/v-green-hop-tac-evn-ha-noi-lap-10-000-tu-doi-pin-xe-may-dien-5087777.html
+2026-06-20 07:34:50,408 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/wgc-nhieu-ngan-hang-trung-uong-dua-vang-du-tru-ve-nuoc-5086864.html
+2026-06-20 07:34:51,002 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/wgc-nhieu-ngan-hang-trung-uong-dua-vang-du-tru-ve-nuoc-5086864.html | Link mới: 4 | Reward: 10.0
+2026-06-20 07:34:51,002 - FocusedCrawler - INFO - Focused Queue size: 1232 | Điểm heuristic: 0 | Cào: https://vnexpress.net/wgc-nhieu-ngan-hang-trung-uong-dua-vang-du-tru-ve-nuoc-5086864.html
+2026-06-20 07:34:51,002 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/nha-dau-tu-bat-dau-gom-bitcoin-5086736.html
+2026-06-20 07:34:51,423 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/nha-dau-tu-bat-dau-gom-bitcoin-5086736.html | Link mới: 6 | Reward: 10.0
+2026-06-20 07:34:51,423 - FocusedCrawler - INFO - Focused Queue size: 1231 | Điểm heuristic: 0 | Cào: https://vnexpress.net/nha-dau-tu-bat-dau-gom-bitcoin-5086736.html
+2026-06-20 07:34:51,424 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/gia-xang-dau-moi-nhat-hom-nay-18-6-5087231.html
+2026-06-20 07:34:51,904 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/gia-xang-dau-moi-nhat-hom-nay-18-6-5087231.html | Link mới: 6 | Reward: 10.0
+2026-06-20 07:34:51,904 - FocusedCrawler - INFO - Focused Queue size: 1232 | Điểm heuristic: 0 | Cào: https://vnexpress.net/gia-xang-dau-moi-nhat-hom-nay-18-6-5087231.html
+2026-06-20 07:34:51,905 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/nhom-co-phieu-vingroup-vuc-day-chung-khoan-5087295.html
+2026-06-20 07:34:52,513 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/nhom-co-phieu-vingroup-vuc-day-chung-khoan-5087295.html | Link mới: 7 | Reward: 10.0
+2026-06-20 07:34:52,514 - FocusedCrawler - INFO - Focused Queue size: 1233 | Điểm heuristic: 0 | Cào: https://vnexpress.net/nhom-co-phieu-vingroup-vuc-day-chung-khoan-5087295.html
+2026-06-20 07:34:52,514 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/kinh-doanh/doanh-nghiep
+2026-06-20 07:34:52,997 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/kinh-doanh/doanh-nghiep | Link mới: 42 | Reward: 10.0
+2026-06-20 07:34:52,997 - FocusedCrawler - INFO - Focused Queue size: 1236 | Điểm heuristic: 0 | Cào: https://vnexpress.net/kinh-doanh/doanh-nghiep
+2026-06-20 07:34:52,999 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/kinh-doanh/chung-khoan
+2026-06-20 07:34:53,505 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/kinh-doanh/chung-khoan | Link mới: 40 | Reward: 10.0
+2026-06-20 07:34:53,506 - FocusedCrawler - INFO - Focused Queue size: 1255 | Điểm heuristic: 0 | Cào: https://vnexpress.net/kinh-doanh/chung-khoan
+2026-06-20 07:34:53,509 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/deutsche-bank-chat-luong-doanh-nghiep-moi-la-dieu-thu-hut-von-ngoai-5087426.html
+2026-06-20 07:34:53,912 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/deutsche-bank-chat-luong-doanh-nghiep-moi-la-dieu-thu-hut-von-ngoai-5087426.html | Link mới: 5 | Reward: 10.0
+2026-06-20 07:34:53,912 - FocusedCrawler - INFO - Focused Queue size: 1274 | Điểm heuristic: 0 | Cào: https://vnexpress.net/deutsche-bank-chat-luong-doanh-nghiep-moi-la-dieu-thu-hut-von-ngoai-5087426.html
+2026-06-20 07:34:53,912 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/von-hoa-spacex-vuot-amazon-5086601.html
+2026-06-20 07:34:54,470 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/von-hoa-spacex-vuot-amazon-5086601.html | Link mới: 4 | Reward: 10.0
+2026-06-20 07:34:54,470 - FocusedCrawler - INFO - Focused Queue size: 1273 | Điểm heuristic: 0 | Cào: https://vnexpress.net/von-hoa-spacex-vuot-amazon-5086601.html
+2026-06-20 07:34:54,470 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/sieu-el-nino-de-doa-kinh-te-chau-a-5087811.html
+2026-06-20 07:34:54,948 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/sieu-el-nino-de-doa-kinh-te-chau-a-5087811.html | Link mới: 13 | Reward: 4.0
+2026-06-20 07:34:54,948 - FocusedCrawler - INFO - Focused Queue size: 1272 | Điểm heuristic: 0 | Cào: https://vnexpress.net/sieu-el-nino-de-doa-kinh-te-chau-a-5087811.html
+2026-06-20 07:34:54,949 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/dac-san-van-loay-hoay-tim-duong-vao-sieu-thi-5087263.html
+2026-06-20 07:34:55,486 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/dac-san-van-loay-hoay-tim-duong-vao-sieu-thi-5087263.html | Link mới: 4 | Reward: 10.0
+2026-06-20 07:34:55,486 - FocusedCrawler - INFO - Focused Queue size: 1282 | Điểm heuristic: 0 | Cào: https://vnexpress.net/dac-san-van-loay-hoay-tim-duong-vao-sieu-thi-5087263.html
+2026-06-20 07:34:55,486 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/doanh-nghiep-than-kho-vi-thu-tuc-moi-truong-chong-cheo-5087179.html
+2026-06-20 07:34:56,113 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/doanh-nghiep-than-kho-vi-thu-tuc-moi-truong-chong-cheo-5087179.html | Link mới: 3 | Reward: 10.0
+2026-06-20 07:34:56,113 - FocusedCrawler - INFO - Focused Queue size: 1281 | Điểm heuristic: 0 | Cào: https://vnexpress.net/doanh-nghiep-than-kho-vi-thu-tuc-moi-truong-chong-cheo-5087179.html
+2026-06-20 07:34:56,113 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/viet-nam-lan-dau-xuat-trung-an-lien-sang-nhat-5087348.html
+2026-06-20 07:34:56,527 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/viet-nam-lan-dau-xuat-trung-an-lien-sang-nhat-5087348.html | Link mới: 4 | Reward: 10.0
+2026-06-20 07:34:56,527 - FocusedCrawler - INFO - Focused Queue size: 1280 | Điểm heuristic: 0 | Cào: https://vnexpress.net/viet-nam-lan-dau-xuat-trung-an-lien-sang-nhat-5087348.html
+2026-06-20 07:34:56,527 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/gia-vang-giam-ve-gan-147-trieu-dong-5087558.html
+2026-06-20 07:34:56,950 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/gia-vang-giam-ve-gan-147-trieu-dong-5087558.html | Link mới: 5 | Reward: 10.0
+2026-06-20 07:34:56,950 - FocusedCrawler - INFO - Focused Queue size: 1279 | Điểm heuristic: 0 | Cào: https://vnexpress.net/gia-vang-giam-ve-gan-147-trieu-dong-5087558.html
+2026-06-20 07:34:56,950 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/vinamilk-la-hang-sua-viet-duy-nhat-vao-top-500-fortune-dong-nam-a-5087350.html
+2026-06-20 07:34:57,344 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/vinamilk-la-hang-sua-viet-duy-nhat-vao-top-500-fortune-dong-nam-a-5087350.html | Link mới: 3 | Reward: 10.0
+2026-06-20 07:34:57,345 - FocusedCrawler - INFO - Focused Queue size: 1279 | Điểm heuristic: 0 | Cào: https://vnexpress.net/vinamilk-la-hang-sua-viet-duy-nhat-vao-top-500-fortune-dong-nam-a-5087350.html
+2026-06-20 07:34:57,345 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/viet-nam-dat-muc-tieu-co-10-doanh-nghiep-cong-nghe-chien-luoc-ty-usd-5087216.html
+2026-06-20 07:34:57,929 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/viet-nam-dat-muc-tieu-co-10-doanh-nghiep-cong-nghe-chien-luoc-ty-usd-5087216.html | Link mới: 1 | Reward: 10.0
+2026-06-20 07:34:57,929 - FocusedCrawler - INFO - Focused Queue size: 1278 | Điểm heuristic: 0 | Cào: https://vnexpress.net/viet-nam-dat-muc-tieu-co-10-doanh-nghiep-cong-nghe-chien-luoc-ty-usd-5087216.html
+2026-06-20 07:34:57,929 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/cong-ty-phuc-vu-mat-dat-sai-gon-don-luc-cho-san-bay-long-thanh-5087349.html
+2026-06-20 07:34:58,346 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/cong-ty-phuc-vu-mat-dat-sai-gon-don-luc-cho-san-bay-long-thanh-5087349.html | Link mới: 3 | Reward: 10.0
+2026-06-20 07:34:58,346 - FocusedCrawler - INFO - Focused Queue size: 1277 | Điểm heuristic: 0 | Cào: https://vnexpress.net/cong-ty-phuc-vu-mat-dat-sai-gon-don-luc-cho-san-bay-long-thanh-5087349.html
+2026-06-20 07:34:58,347 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/kinh-doanh-p3
+2026-06-20 07:34:59,375 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/kinh-doanh-p3 | Link mới: 41 | Reward: 10.0
+2026-06-20 07:34:59,375 - FocusedCrawler - INFO - Focused Queue size: 1276 | Điểm heuristic: 0 | Cào: https://vnexpress.net/kinh-doanh-p3
+2026-06-20 07:34:59,378 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/kinh-doanh/ebank
+2026-06-20 07:35:00,717 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/kinh-doanh/ebank | Link mới: 46 | Reward: 10.0
+2026-06-20 07:35:00,717 - FocusedCrawler - INFO - Focused Queue size: 1300 | Điểm heuristic: 0 | Cào: https://vnexpress.net/kinh-doanh/ebank
+2026-06-20 07:35:00,720 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/infographics
+2026-06-20 07:35:01,205 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/infographics | Link mới: 28 | Reward: 10.0
+2026-06-20 07:35:01,206 - FocusedCrawler - INFO - Focused Queue size: 1328 | Điểm heuristic: 0 | Cào: https://vnexpress.net/infographics
+2026-06-20 07:35:01,208 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/thu-tuong-de-xuat-dua-nang-luong-thanh-tru-cot-hop-tac-asean-nga-5086961.html
+2026-06-20 07:35:01,635 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/thu-tuong-de-xuat-dua-nang-luong-thanh-tru-cot-hop-tac-asean-nga-5086961.html | Link mới: 2 | Reward: 10.0
+2026-06-20 07:35:01,636 - FocusedCrawler - INFO - Focused Queue size: 1352 | Điểm heuristic: 0 | Cào: https://vnexpress.net/thu-tuong-de-xuat-dua-nang-luong-thanh-tru-cot-hop-tac-asean-nga-5086961.html
+2026-06-20 07:35:01,636 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/kinh-doanh/hang-hoa
+2026-06-20 07:35:02,202 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/kinh-doanh/hang-hoa | Link mới: 37 | Reward: 10.0
+2026-06-20 07:35:02,202 - FocusedCrawler - INFO - Focused Queue size: 1352 | Điểm heuristic: 0 | Cào: https://vnexpress.net/kinh-doanh/hang-hoa
+2026-06-20 07:35:02,204 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/pho-thu-tuong-yeu-cau-sua-quy-dinh-hoan-xuat-canh-vi-no-thue-5087200.html
+2026-06-20 07:35:02,843 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/pho-thu-tuong-yeu-cau-sua-quy-dinh-hoan-xuat-canh-vi-no-thue-5087200.html | Link mới: 2 | Reward: 10.0
+2026-06-20 07:35:02,843 - FocusedCrawler - INFO - Focused Queue size: 1367 | Điểm heuristic: 0 | Cào: https://vnexpress.net/pho-thu-tuong-yeu-cau-sua-quy-dinh-hoan-xuat-canh-vi-no-thue-5087200.html
+2026-06-20 07:35:02,844 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/yen-nhat-xuong-gan-muc-thap-nhat-40-nam-5087739.html
+2026-06-20 07:35:03,304 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/yen-nhat-xuong-gan-muc-thap-nhat-40-nam-5087739.html | Link mới: 3 | Reward: 10.0
+2026-06-20 07:35:03,304 - FocusedCrawler - INFO - Focused Queue size: 1367 | Điểm heuristic: 0 | Cào: https://vnexpress.net/yen-nhat-xuong-gan-muc-thap-nhat-40-nam-5087739.html
+2026-06-20 07:35:03,305 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/anh
+2026-06-20 07:35:03,783 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/anh | Link mới: 27 | Reward: 10.0
+2026-06-20 07:35:03,784 - FocusedCrawler - INFO - Focused Queue size: 1368 | Điểm heuristic: 0 | Cào: https://vnexpress.net/anh
+2026-06-20 07:35:03,785 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/gia-vang-the-gioi-quay-dau-giam-5087485.html
+2026-06-20 07:35:04,459 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/gia-vang-the-gioi-quay-dau-giam-5087485.html | Link mới: 3 | Reward: 10.0
+2026-06-20 07:35:04,459 - FocusedCrawler - INFO - Focused Queue size: 1370 | Điểm heuristic: 0 | Cào: https://vnexpress.net/gia-vang-the-gioi-quay-dau-giam-5087485.html
+2026-06-20 07:35:04,460 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/chuyen-doi-so-tro-luc-tang-truong-du-lich-hue-5086059.html
+2026-06-20 07:35:04,962 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/chuyen-doi-so-tro-luc-tang-truong-du-lich-hue-5086059.html | Link mới: 10 | Reward: 4.0
+2026-06-20 07:35:04,962 - FocusedCrawler - INFO - Focused Queue size: 1369 | Điểm heuristic: 0 | Cào: https://vnexpress.net/chuyen-doi-so-tro-luc-tang-truong-du-lich-hue-5086059.html
+2026-06-20 07:35:04,964 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/chu-dau-tu-san-bay-long-thanh-du-bao-lai-thap-nhat-5-nam-5087103.html
+2026-06-20 07:35:05,418 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/chu-dau-tu-san-bay-long-thanh-du-bao-lai-thap-nhat-5-nam-5087103.html | Link mới: 1 | Reward: 10.0
+2026-06-20 07:35:05,418 - FocusedCrawler - INFO - Focused Queue size: 1375 | Điểm heuristic: 0 | Cào: https://vnexpress.net/chu-dau-tu-san-bay-long-thanh-du-bao-lai-thap-nhat-5-nam-5087103.html
+2026-06-20 07:35:05,418 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/nguoi-dan-chi-it-hon-cho-mam-cung-tet-doan-ngo-5087483.html
+2026-06-20 07:35:05,830 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/nguoi-dan-chi-it-hon-cho-mam-cung-tet-doan-ngo-5087483.html | Link mới: 0 | Reward: 10.0
+2026-06-20 07:35:05,830 - FocusedCrawler - INFO - Focused Queue size: 1374 | Điểm heuristic: 0 | Cào: https://vnexpress.net/nguoi-dan-chi-it-hon-cho-mam-cung-tet-doan-ngo-5087483.html
+2026-06-20 07:35:05,830 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/lien-bo-cong-thuong-tai-chinh-se-cong-bo-gia-co-so-xang-e10-5086618.html
+2026-06-20 07:35:06,419 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/lien-bo-cong-thuong-tai-chinh-se-cong-bo-gia-co-so-xang-e10-5086618.html | Link mới: 4 | Reward: 10.0
+2026-06-20 07:35:06,419 - FocusedCrawler - INFO - Focused Queue size: 1373 | Điểm heuristic: 0 | Cào: https://vnexpress.net/lien-bo-cong-thuong-tai-chinh-se-cong-bo-gia-co-so-xang-e10-5086618.html
+2026-06-20 07:35:06,420 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/cong-ty-me-ban-chuoi-pizza-hut-vi-kho-canh-tranh-5086691.html
+2026-06-20 07:35:06,812 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/cong-ty-me-ban-chuoi-pizza-hut-vi-kho-canh-tranh-5086691.html | Link mới: 2 | Reward: 10.0
+2026-06-20 07:35:06,812 - FocusedCrawler - INFO - Focused Queue size: 1373 | Điểm heuristic: 0 | Cào: https://vnexpress.net/cong-ty-me-ban-chuoi-pizza-hut-vi-kho-canh-tranh-5086691.html
+2026-06-20 07:35:06,812 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/kinh-doanh-p4
+2026-06-20 07:35:07,786 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/kinh-doanh-p4 | Link mới: 37 | Reward: 10.0
+2026-06-20 07:35:07,786 - FocusedCrawler - INFO - Focused Queue size: 1372 | Điểm heuristic: 0 | Cào: https://vnexpress.net/kinh-doanh-p4
+2026-06-20 07:35:07,789 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/ong-lon-nganh-cao-su-du-kien-doanh-thu-cao-ky-luc-5086769.html
+2026-06-20 07:35:08,263 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/ong-lon-nganh-cao-su-du-kien-doanh-thu-cao-ky-luc-5086769.html | Link mới: 0 | Reward: 10.0
+2026-06-20 07:35:08,263 - FocusedCrawler - INFO - Focused Queue size: 1391 | Điểm heuristic: 0 | Cào: https://vnexpress.net/ong-lon-nganh-cao-su-du-kien-doanh-thu-cao-ky-luc-5086769.html
+2026-06-20 07:35:08,264 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/tan-tao-khong-bi-pha-san-5086917.html
+2026-06-20 07:35:08,877 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/tan-tao-khong-bi-pha-san-5086917.html | Link mới: 1 | Reward: 10.0
+2026-06-20 07:35:08,877 - FocusedCrawler - INFO - Focused Queue size: 1390 | Điểm heuristic: 0 | Cào: https://vnexpress.net/tan-tao-khong-bi-pha-san-5086917.html
+2026-06-20 07:35:08,878 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/du-kien-noi-tran-von-ngan-han-cho-vay-trung-dai-han-len-40-5086889.html
+2026-06-20 07:35:09,336 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/du-kien-noi-tran-von-ngan-han-cho-vay-trung-dai-han-len-40-5086889.html | Link mới: 2 | Reward: 10.0
+2026-06-20 07:35:09,336 - FocusedCrawler - INFO - Focused Queue size: 1389 | Điểm heuristic: 0 | Cào: https://vnexpress.net/du-kien-noi-tran-von-ngan-han-cho-vay-trung-dai-han-len-40-5086889.html
+2026-06-20 07:35:09,337 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/techcombank-xay-dung-ban-do-kham-pha-viet-nam-ruc-ro-ket-noi-doanh-nghiep-5087550.html
+2026-06-20 07:35:09,744 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/techcombank-xay-dung-ban-do-kham-pha-viet-nam-ruc-ro-ket-noi-doanh-nghiep-5087550.html | Link mới: 1 | Reward: 10.0
+2026-06-20 07:35:09,744 - FocusedCrawler - INFO - Focused Queue size: 1388 | Điểm heuristic: 0 | Cào: https://vnexpress.net/techcombank-xay-dung-ban-do-kham-pha-viet-nam-ruc-ro-ket-noi-doanh-nghiep-5087550.html
+2026-06-20 07:35:09,847 - CrawlerEnv - INFO - Đã đóng browser.
+2026-06-20 07:35:09,867 - Evaluate - INFO - Focused hoàn thành trong 55.83s | Băng thông: 103.92 MB | Tổng Reward: 941.9 | Tổng số trang cào: 100
+2026-06-20 07:35:09,867 - Evaluate - INFO - 
+==================================================
+--- Chạy RL Crawler (1 Episode) ---
+==================================================
+2026-06-20 07:35:11,999 - CrawlerEnv - INFO - Đang khởi tạo Playwright browser...
+2026-06-20 07:35:12,465 - Evaluate - INFO - RL Crawler thực hiện Deep Web Action: Tìm kiếm form với từ khóa 'thể thao'
+2026-06-20 07:35:12,465 - CrawlerEnv - INFO - [Deep Web Action] Tương tác form tìm kiếm với từ khóa: thể thao
+2026-06-20 07:35:12,465 - CrawlerEnv - INFO - Đang cào (Depth 0): https://timkiem.vnexpress.net/?q=th%E1%BB%83%20thao
+2026-06-20 07:35:19,485 - CrawlerEnv - INFO - Cào thành công: https://timkiem.vnexpress.net/?q=th%E1%BB%83%20thao | Link mới: 62 | Reward: 10.0
+2026-06-20 07:35:19,485 - CrawlerEnv - INFO - Đã reset môi trường (visited_urls, bandwidth).
+2026-06-20 07:35:19,485 - CrawlerEnv - INFO - Đang cào (Depth 0): https://vnexpress.net
+2026-06-20 07:35:20,102 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net | Link mới: 51 | Reward: 10.0
+2026-06-20 07:35:20,102 - RLCrawler - INFO - RL Queue size: 0 | Epsilon: 1.00 | Cào: https://vnexpress.net
+2026-06-20 07:35:20,192 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/bi-quyet-hoc-cua-thu-khoa-lop-10-ha-noi-2026-5087821.html
+2026-06-20 07:35:20,755 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/bi-quyet-hoc-cua-thu-khoa-lop-10-ha-noi-2026-5087821.html | Link mới: 26 | Reward: 10.0
+2026-06-20 07:35:20,755 - RLCrawler - INFO - RL Queue size: 50 | Epsilon: 1.00 | Cào: https://vnexpress.net/bi-quyet-hoc-cua-thu-khoa-lop-10-ha-noi-2026-5087821.html
+2026-06-20 07:35:20,833 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/du-lich
+2026-06-20 07:35:21,593 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/du-lich | Link mới: 95 | Reward: 10.0
+2026-06-20 07:35:21,594 - RLCrawler - INFO - RL Queue size: 50 | Epsilon: 1.00 | Cào: https://vnexpress.net/du-lich
+2026-06-20 07:35:21,710 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/vietjet-giam-20-gia-ve-nhieu-hang-bay-5084685.html
+2026-06-20 07:35:22,182 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/vietjet-giam-20-gia-ve-nhieu-hang-bay-5084685.html | Link mới: 25 | Reward: 10.0
+2026-06-20 07:35:22,182 - RLCrawler - INFO - RL Queue size: 120 | Epsilon: 1.00 | Cào: https://vnexpress.net/vietjet-giam-20-gia-ve-nhieu-hang-bay-5084685.html
+2026-06-20 07:35:22,265 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/phap-luat
+2026-06-20 07:35:23,023 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/phap-luat | Link mới: 80 | Reward: 10.0
+2026-06-20 07:35:23,023 - RLCrawler - INFO - RL Queue size: 120 | Epsilon: 1.00 | Cào: https://vnexpress.net/phap-luat
+2026-06-20 07:35:23,348 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/dap-an-cau-hoi-steve-jobs-viet-nam-trong-de-van-tot-nghiep-thpt-5087784.html
+2026-06-20 07:35:23,650 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/dap-an-cau-hoi-steve-jobs-viet-nam-trong-de-van-tot-nghiep-thpt-5087784.html | Link mới: 26 | Reward: 10.0
+2026-06-20 07:35:23,650 - RLCrawler - INFO - RL Queue size: 174 | Epsilon: 1.00 | Cào: https://vnexpress.net/dap-an-cau-hoi-steve-jobs-viet-nam-trong-de-van-tot-nghiep-thpt-5087784.html
+2026-06-20 07:35:23,691 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/con-sot-world-cup-cua-khach-trung-quoc-5085805.html
+2026-06-20 07:35:24,359 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/con-sot-world-cup-cua-khach-trung-quoc-5085805.html | Link mới: 10 | Reward: 4.0
+2026-06-20 07:35:24,359 - RLCrawler - INFO - RL Queue size: 175 | Epsilon: 1.00 | Cào: https://vnexpress.net/con-sot-world-cup-cua-khach-trung-quoc-5085805.html
+2026-06-20 07:35:24,436 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/du-lich-he-tang-truong-5083991.html
+2026-06-20 07:35:26,122 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/du-lich-he-tang-truong-5083991.html | Link mới: 36 | Reward: 10.0
+2026-06-20 07:35:26,122 - RLCrawler - INFO - RL Queue size: 181 | Epsilon: 1.00 | Cào: https://vnexpress.net/du-lich-he-tang-truong-5083991.html
+2026-06-20 07:35:26,205 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/chieu-lua-hon-181-ty-dong-tu-gan-500-nguoi-mua-hop-dong-so-huu-ky-nghi-5086955.html
+2026-06-20 07:35:26,820 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/chieu-lua-hon-181-ty-dong-tu-gan-500-nguoi-mua-hop-dong-so-huu-ky-nghi-5086955.html | Link mới: 23 | Reward: 10.0
+2026-06-20 07:35:26,820 - RLCrawler - INFO - RL Queue size: 189 | Epsilon: 1.00 | Cào: https://vnexpress.net/chieu-lua-hon-181-ty-dong-tu-gan-500-nguoi-mua-hop-dong-so-huu-ky-nghi-5086955.html
+2026-06-20 07:35:26,902 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/nhieu-khach-my-tiet-kiem-khi-du-lich-mua-he-5085291.html
+2026-06-20 07:35:27,464 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/nhieu-khach-my-tiet-kiem-khi-du-lich-mua-he-5085291.html | Link mới: 24 | Reward: 10.0
+2026-06-20 07:35:27,464 - RLCrawler - INFO - RL Queue size: 188 | Epsilon: 1.00 | Cào: https://vnexpress.net/nhieu-khach-my-tiet-kiem-khi-du-lich-mua-he-5085291.html
+2026-06-20 07:35:27,553 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/chu-de/thanh-pho-ho-chi-minh-2091
+2026-06-20 07:35:28,393 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/chu-de/thanh-pho-ho-chi-minh-2091 | Link mới: 43 | Reward: 10.0
+2026-06-20 07:35:28,394 - RLCrawler - INFO - RL Queue size: 187 | Epsilon: 1.00 | Cào: https://vnexpress.net/chu-de/thanh-pho-ho-chi-minh-2091
+2026-06-20 07:35:28,478 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/bao-thap-lam-tu-hang-trieu-vo-oc-san-ho-5086401.html
+2026-06-20 07:35:29,149 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/bao-thap-lam-tu-hang-trieu-vo-oc-san-ho-5086401.html | Link mới: 24 | Reward: 10.0
+2026-06-20 07:35:29,149 - RLCrawler - INFO - RL Queue size: 205 | Epsilon: 1.00 | Cào: https://vnexpress.net/bao-thap-lam-tu-hang-trieu-vo-oc-san-ho-5086401.html
+2026-06-20 07:35:29,239 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/phap-luat/video
+2026-06-20 07:35:29,732 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/phap-luat/video | Link mới: 60 | Reward: 10.0
+2026-06-20 07:35:29,732 - RLCrawler - INFO - RL Queue size: 205 | Epsilon: 1.00 | Cào: https://vnexpress.net/phap-luat/video
+2026-06-20 07:35:29,824 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/nu-sinh-nhanh-tri-tron-duoi-gam-giuong-ky-tuc-xa-giua-cuoc-tham-sat-5087383.html
+2026-06-20 07:35:30,322 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/nu-sinh-nhanh-tri-tron-duoi-gam-giuong-ky-tuc-xa-giua-cuoc-tham-sat-5087383.html | Link mới: 26 | Reward: 10.0
+2026-06-20 07:35:30,323 - RLCrawler - INFO - RL Queue size: 237 | Epsilon: 1.00 | Cào: https://vnexpress.net/nu-sinh-nhanh-tri-tron-duoi-gam-giuong-ky-tuc-xa-giua-cuoc-tham-sat-5087383.html
+2026-06-20 07:35:30,615 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/du-khach-bi-ca-map-can-vao-dau-khi-trai-nghiem-lan-thuy-cung-5087218.html
+2026-06-20 07:35:31,080 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/du-khach-bi-ca-map-can-vao-dau-khi-trai-nghiem-lan-thuy-cung-5087218.html | Link mới: 26 | Reward: 10.0
+2026-06-20 07:35:31,080 - RLCrawler - INFO - RL Queue size: 236 | Epsilon: 1.00 | Cào: https://vnexpress.net/du-khach-bi-ca-map-can-vao-dau-khi-trai-nghiem-lan-thuy-cung-5087218.html
+2026-06-20 07:35:31,163 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/bat-ngo-phat-hien-nguoi-than-trong-anh-khach-tay-chup-30-nam-truoc-o-hoi-an-5085080.html
+2026-06-20 07:35:31,615 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/bat-ngo-phat-hien-nguoi-than-trong-anh-khach-tay-chup-30-nam-truoc-o-hoi-an-5085080.html | Link mới: 25 | Reward: 10.0
+2026-06-20 07:35:31,615 - RLCrawler - INFO - RL Queue size: 235 | Epsilon: 1.00 | Cào: https://vnexpress.net/bat-ngo-phat-hien-nguoi-than-trong-anh-khach-tay-chup-30-nam-truoc-o-hoi-an-5085080.html
+2026-06-20 07:35:31,702 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/dan-con-gai-nho-vao-toilet-nu-ong-bo-bi-nguoi-la-chan-cua-goi-canh-sat-5087205.html
+2026-06-20 07:35:32,145 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/dan-con-gai-nho-vao-toilet-nu-ong-bo-bi-nguoi-la-chan-cua-goi-canh-sat-5087205.html | Link mới: 25 | Reward: 10.0
+2026-06-20 07:35:32,146 - RLCrawler - INFO - RL Queue size: 235 | Epsilon: 1.00 | Cào: https://vnexpress.net/dan-con-gai-nho-vao-toilet-nu-ong-bo-bi-nguoi-la-chan-cua-goi-canh-sat-5087205.html
+2026-06-20 07:35:32,417 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/giao-duc/chan-dung
+2026-06-20 07:35:32,891 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/giao-duc/chan-dung | Link mới: 64 | Reward: 10.0
+2026-06-20 07:35:32,891 - RLCrawler - INFO - RL Queue size: 234 | Epsilon: 1.00 | Cào: https://vnexpress.net/giao-duc/chan-dung
+2026-06-20 07:35:32,984 - CrawlerEnv - INFO - Đang cào (Depth 3): https://vnexpress.net/cam-nang-du-lich-phu-quoc-4106697.html
+2026-06-20 07:35:33,624 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/cam-nang-du-lich-phu-quoc-4106697.html | Link mới: 9 | Reward: 4.0
+2026-06-20 07:35:33,624 - RLCrawler - INFO - RL Queue size: 271 | Epsilon: 1.00 | Cào: https://vnexpress.net/cam-nang-du-lich-phu-quoc-4106697.html
+2026-06-20 07:35:33,707 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/cho-nguoi-khac-vay-tien-de-ca-do-world-cup-2026-co-bi-phat-5086947.html
+2026-06-20 07:35:34,234 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/cho-nguoi-khac-vay-tien-de-ca-do-world-cup-2026-co-bi-phat-5086947.html | Link mới: 27 | Reward: 10.0
+2026-06-20 07:35:34,234 - RLCrawler - INFO - RL Queue size: 276 | Epsilon: 1.00 | Cào: https://vnexpress.net/cho-nguoi-khac-vay-tien-de-ca-do-world-cup-2026-co-bi-phat-5086947.html
+2026-06-20 07:35:34,510 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/hai-khach-san-viet-nam-vao-danh-sach-tot-nhat-the-gioi-5084236.html
+2026-06-20 07:35:34,957 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/hai-khach-san-viet-nam-vao-danh-sach-tot-nhat-the-gioi-5084236.html | Link mới: 23 | Reward: 10.0
+2026-06-20 07:35:34,957 - RLCrawler - INFO - RL Queue size: 276 | Epsilon: 1.00 | Cào: https://vnexpress.net/hai-khach-san-viet-nam-vao-danh-sach-tot-nhat-the-gioi-5084236.html
+2026-06-20 07:35:35,039 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/bo-nong-nghiep-va-moi-truong-bac-de-xuat-nang-cong-suat-bai-rac-da-phuoc-5087178.html
+2026-06-20 07:35:35,487 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/bo-nong-nghiep-va-moi-truong-bac-de-xuat-nang-cong-suat-bai-rac-da-phuoc-5087178.html | Link mới: 27 | Reward: 10.0
+2026-06-20 07:35:35,487 - RLCrawler - INFO - RL Queue size: 275 | Epsilon: 1.00 | Cào: https://vnexpress.net/bo-nong-nghiep-va-moi-truong-bac-de-xuat-nang-cong-suat-bai-rac-da-phuoc-5087178.html
+2026-06-20 07:35:35,566 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/tham-dinh-vien-giau-mat-cua-michelin-2026-noi-ve-am-thuc-viet-nam-5084880.html
+2026-06-20 07:35:36,007 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/tham-dinh-vien-giau-mat-cua-michelin-2026-noi-ve-am-thuc-viet-nam-5084880.html | Link mới: 25 | Reward: 10.0
+2026-06-20 07:35:36,007 - RLCrawler - INFO - RL Queue size: 276 | Epsilon: 1.00 | Cào: https://vnexpress.net/tham-dinh-vien-giau-mat-cua-michelin-2026-noi-ve-am-thuc-viet-nam-5084880.html
+2026-06-20 07:35:36,295 - CrawlerEnv - INFO - Đang cào (Depth 3): https://vnexpress.net/cuoc-kham-xet-dinh-thu-va-cong-ty-cua-bau-doan-dien-ra-the-nao-4933285.html
+2026-06-20 07:35:37,527 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/cuoc-kham-xet-dinh-thu-va-cong-ty-cua-bau-doan-dien-ra-the-nao-4933285.html | Link mới: 22 | Reward: 10.0
+2026-06-20 07:35:37,527 - RLCrawler - INFO - RL Queue size: 277 | Epsilon: 1.00 | Cào: https://vnexpress.net/cuoc-kham-xet-dinh-thu-va-cong-ty-cua-bau-doan-dien-ra-the-nao-4933285.html
+2026-06-20 07:35:37,604 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/bai-bien-it-nguoi-biet-tai-viet-nam-vao-top-dep-nhat-the-gioi-5084180.html
+2026-06-20 07:35:38,071 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/bai-bien-it-nguoi-biet-tai-viet-nam-vao-top-dep-nhat-the-gioi-5084180.html | Link mới: 24 | Reward: 10.0
+2026-06-20 07:35:38,071 - RLCrawler - INFO - RL Queue size: 276 | Epsilon: 1.00 | Cào: https://vnexpress.net/bai-bien-it-nguoi-biet-tai-viet-nam-vao-top-dep-nhat-the-gioi-5084180.html
+2026-06-20 07:35:38,150 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/du-lich/anh-video
+2026-06-20 07:35:39,574 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/du-lich/anh-video | Link mới: 52 | Reward: 10.0
+2026-06-20 07:35:39,574 - RLCrawler - INFO - RL Queue size: 275 | Epsilon: 1.00 | Cào: https://vnexpress.net/du-lich/anh-video
+2026-06-20 07:35:39,852 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/cuoc-chien-nhan-tien-ban-tau-the-chap-giua-ngan-hang-va-xuong-sua-chua-5086437.html
+2026-06-20 07:35:40,292 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/cuoc-chien-nhan-tien-ban-tau-the-chap-giua-ngan-hang-va-xuong-sua-chua-5086437.html | Link mới: 25 | Reward: 10.0
+2026-06-20 07:35:40,292 - RLCrawler - INFO - RL Queue size: 295 | Epsilon: 1.00 | Cào: https://vnexpress.net/cuoc-chien-nhan-tien-ban-tau-the-chap-giua-ngan-hang-va-xuong-sua-chua-5086437.html
+2026-06-20 07:35:40,370 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/ngoi-sao-duy-nhat-nao-gan-tren-tuong-dai-lo-danh-vong-5084579.html
+2026-06-20 07:35:40,792 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/ngoi-sao-duy-nhat-nao-gan-tren-tuong-dai-lo-danh-vong-5084579.html | Link mới: 23 | Reward: 10.0
+2026-06-20 07:35:40,792 - RLCrawler - INFO - RL Queue size: 294 | Epsilon: 1.00 | Cào: https://vnexpress.net/ngoi-sao-duy-nhat-nao-gan-tren-tuong-dai-lo-danh-vong-5084579.html
+2026-06-20 07:35:40,868 - CrawlerEnv - INFO - Đang cào (Depth 3): https://vnexpress.net/hai-nguoi-ngang-nhien-van-chuyen-nua-tan-ma-tuy-4947566.html
+2026-06-20 07:35:42,201 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/hai-nguoi-ngang-nhien-van-chuyen-nua-tan-ma-tuy-4947566.html | Link mới: 25 | Reward: 10.0
+2026-06-20 07:35:42,201 - RLCrawler - INFO - RL Queue size: 293 | Epsilon: 1.00 | Cào: https://vnexpress.net/hai-nguoi-ngang-nhien-van-chuyen-nua-tan-ma-tuy-4947566.html
+2026-06-20 07:35:42,276 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/am-muu-giet-nguoi-khi-cau-be-3-tuoi-bi-nem-vao-chuong-ca-sau-5087704.html
+2026-06-20 07:35:42,861 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/am-muu-giet-nguoi-khi-cau-be-3-tuoi-bi-nem-vao-chuong-ca-sau-5087704.html | Link mới: 25 | Reward: 10.0
+2026-06-20 07:35:42,861 - RLCrawler - INFO - RL Queue size: 292 | Epsilon: 1.00 | Cào: https://vnexpress.net/am-muu-giet-nguoi-khi-cau-be-3-tuoi-bi-nem-vao-chuong-ca-sau-5087704.html
+2026-06-20 07:35:42,941 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/cac-mon-an-duong-pho-cho-mua-world-cup-2026-5084094.html
+2026-06-20 07:35:43,501 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/cac-mon-an-duong-pho-cho-mua-world-cup-2026-5084094.html | Link mới: 11 | Reward: 6.0
+2026-06-20 07:35:43,501 - RLCrawler - INFO - RL Queue size: 291 | Epsilon: 1.00 | Cào: https://vnexpress.net/cac-mon-an-duong-pho-cho-mua-world-cup-2026-5084094.html
+2026-06-20 07:35:43,585 - CrawlerEnv - INFO - Đang cào (Depth 3): https://video.vnexpress.net/chu-nha-phuc-kich-tom-gon-ten-trom-4920885.html
+2026-06-20 07:35:44,438 - CrawlerEnv - INFO - Cào thành công: https://video.vnexpress.net/chu-nha-phuc-kich-tom-gon-ten-trom-4920885.html | Link mới: 52 | Reward: 10.0
+2026-06-20 07:35:44,438 - RLCrawler - INFO - RL Queue size: 290 | Epsilon: 1.00 | Cào: https://video.vnexpress.net/chu-nha-phuc-kich-tom-gon-ten-trom-4920885.html
+2026-06-20 07:35:44,842 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/vietjet-va-tong-cuc-du-lich-thai-lan-quang-ba-diem-den-dong-nam-a-5084684.html
+2026-06-20 07:35:46,512 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/vietjet-va-tong-cuc-du-lich-thai-lan-quang-ba-diem-den-dong-nam-a-5084684.html | Link mới: 23 | Reward: 10.0
+2026-06-20 07:35:46,512 - RLCrawler - INFO - RL Queue size: 320 | Epsilon: 1.00 | Cào: https://vnexpress.net/vietjet-va-tong-cuc-du-lich-thai-lan-quang-ba-diem-den-dong-nam-a-5084684.html
+2026-06-20 07:35:46,668 - CrawlerEnv - INFO - Đang cào (Depth 3): https://vnexpress.net/thay-giao-toan-thu-chuc-trieu-dong-moi-thang-tu-bonsai-day-nhom-5057367.html
+2026-06-20 07:35:47,885 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/thay-giao-toan-thu-chuc-trieu-dong-moi-thang-tu-bonsai-day-nhom-5057367.html | Link mới: 25 | Reward: 10.0
+2026-06-20 07:35:47,885 - RLCrawler - INFO - RL Queue size: 319 | Epsilon: 1.00 | Cào: https://vnexpress.net/thay-giao-toan-thu-chuc-trieu-dong-moi-thang-tu-bonsai-day-nhom-5057367.html
+2026-06-20 07:35:48,046 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/nghi-can-thu-hai-vu-vac-dieu-cay-danh-nguoi-o-ha-noi-ra-dau-thu-5086092.html
+2026-06-20 07:35:48,482 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/nghi-can-thu-hai-vu-vac-dieu-cay-danh-nguoi-o-ha-noi-ra-dau-thu-5086092.html | Link mới: 22 | Reward: 10.0
+2026-06-20 07:35:48,482 - RLCrawler - INFO - RL Queue size: 318 | Epsilon: 1.00 | Cào: https://vnexpress.net/nghi-can-thu-hai-vu-vac-dieu-cay-danh-nguoi-o-ha-noi-ra-dau-thu-5086092.html
+2026-06-20 07:35:48,644 - CrawlerEnv - INFO - Đang cào (Depth 3): https://vnexpress.net/cam-nang-du-lich-con-dao-4445727.html
+2026-06-20 07:35:49,339 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/cam-nang-du-lich-con-dao-4445727.html | Link mới: 18 | Reward: 2.0
+2026-06-20 07:35:49,339 - RLCrawler - INFO - RL Queue size: 317 | Epsilon: 1.00 | Cào: https://vnexpress.net/cam-nang-du-lich-con-dao-4445727.html
+2026-06-20 07:35:49,501 - CrawlerEnv - INFO - Đang cào (Depth 3): https://vnexpress.net/26-thanh-nien-mua-dao-phong-lon-gay-nao-loan-duong-pho-4945810.html
+2026-06-20 07:35:50,978 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/26-thanh-nien-mua-dao-phong-lon-gay-nao-loan-duong-pho-4945810.html | Link mới: 25 | Reward: 10.0
+2026-06-20 07:35:50,978 - RLCrawler - INFO - RL Queue size: 330 | Epsilon: 1.00 | Cào: https://vnexpress.net/26-thanh-nien-mua-dao-phong-lon-gay-nao-loan-duong-pho-4945810.html
+2026-06-20 07:35:51,140 - CrawlerEnv - INFO - Đang cào (Depth 3): https://vnexpress.net/dang-cho-ca-gia-dinh-ong-bo-my-ban-guc-ke-dinh-cuop-xe-5071029.html
+2026-06-20 07:35:51,566 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/dang-cho-ca-gia-dinh-ong-bo-my-ban-guc-ke-dinh-cuop-xe-5071029.html | Link mới: 25 | Reward: 10.0
+2026-06-20 07:35:51,566 - RLCrawler - INFO - RL Queue size: 329 | Epsilon: 1.00 | Cào: https://vnexpress.net/dang-cho-ca-gia-dinh-ong-bo-my-ban-guc-ke-dinh-cuop-xe-5071029.html
+2026-06-20 07:35:51,729 - CrawlerEnv - INFO - Đang cào (Depth 3): https://vnexpress.net/lang-gom-500-tuoi-giu-chan-khach-tay-o-hoi-an-5071654.html
+2026-06-20 07:35:54,260 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/lang-gom-500-tuoi-giu-chan-khach-tay-o-hoi-an-5071654.html | Link mới: 26 | Reward: 10.0
+2026-06-20 07:35:54,260 - RLCrawler - INFO - RL Queue size: 328 | Epsilon: 1.00 | Cào: https://vnexpress.net/lang-gom-500-tuoi-giu-chan-khach-tay-o-hoi-an-5071654.html
+2026-06-20 07:35:54,429 - CrawlerEnv - INFO - Đang cào (Depth 4): https://video.vnexpress.net/nhip-song
+2026-06-20 07:35:54,797 - CrawlerEnv - INFO - Cào thành công: https://video.vnexpress.net/nhip-song | Link mới: 51 | Reward: 10.0
+2026-06-20 07:35:54,797 - RLCrawler - INFO - RL Queue size: 328 | Epsilon: 1.00 | Cào: https://video.vnexpress.net/nhip-song
+2026-06-20 07:35:54,929 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/suc-khoe
+2026-06-20 07:35:55,469 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/suc-khoe | Link mới: 82 | Reward: 10.0
+2026-06-20 07:35:55,469 - RLCrawler - INFO - RL Queue size: 332 | Epsilon: 1.00 | Cào: https://vnexpress.net/suc-khoe
+2026-06-20 07:35:55,661 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/nuoc-chay-xiet-sau-mua-lon-o-tp-hcm-5086100.html
+2026-06-20 07:35:56,851 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/nuoc-chay-xiet-sau-mua-lon-o-tp-hcm-5086100.html | Link mới: 24 | Reward: 4.0
+2026-06-20 07:35:56,852 - RLCrawler - INFO - RL Queue size: 389 | Epsilon: 1.00 | Cào: https://vnexpress.net/nuoc-chay-xiet-sau-mua-lon-o-tp-hcm-5086100.html
+2026-06-20 07:35:56,968 - CrawlerEnv - INFO - Đang cào (Depth 3): https://vnexpress.net/tp-hcm-de-nghi-nang-cong-suat-chon-lap-bai-rac-da-phuoc-len-gap-doi-5072732.html
+2026-06-20 07:35:57,617 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/tp-hcm-de-nghi-nang-cong-suat-chon-lap-bai-rac-da-phuoc-len-gap-doi-5072732.html | Link mới: 21 | Reward: 10.0
+2026-06-20 07:35:57,617 - RLCrawler - INFO - RL Queue size: 408 | Epsilon: 1.00 | Cào: https://vnexpress.net/tp-hcm-de-nghi-nang-cong-suat-chon-lap-bai-rac-da-phuoc-len-gap-doi-5072732.html
+2026-06-20 07:35:57,786 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/nao-tre-qua-tai-dopamine-vi-video-ngan-5087026.html
+2026-06-20 07:35:58,220 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/nao-tre-qua-tai-dopamine-vi-video-ngan-5087026.html | Link mới: 22 | Reward: 10.0
+2026-06-20 07:35:58,220 - RLCrawler - INFO - RL Queue size: 407 | Epsilon: 1.00 | Cào: https://vnexpress.net/nao-tre-qua-tai-dopamine-vi-video-ngan-5087026.html
+2026-06-20 07:35:58,378 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/lich-van-nien
+2026-06-20 07:35:58,931 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/lich-van-nien | Link mới: 20 | Reward: 10.0
+2026-06-20 07:35:58,931 - RLCrawler - INFO - RL Queue size: 406 | Epsilon: 1.00 | Cào: https://vnexpress.net/lich-van-nien
+2026-06-20 07:35:59,109 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/co-gai-mac-benh-hiem-rung-hang-tram-soi-toc-moi-ngay-5087524.html
+2026-06-20 07:35:59,770 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/co-gai-mac-benh-hiem-rung-hang-tram-soi-toc-moi-ngay-5087524.html | Link mới: 24 | Reward: 10.0
+2026-06-20 07:35:59,771 - RLCrawler - INFO - RL Queue size: 405 | Epsilon: 1.00 | Cào: https://vnexpress.net/co-gai-mac-benh-hiem-rung-hang-tram-soi-toc-moi-ngay-5087524.html
+2026-06-20 07:35:59,942 - CrawlerEnv - INFO - Đang cào (Depth 4): https://vnexpress.net/chinh-sach-bao-mat
+2026-06-20 07:36:00,752 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/chinh-sach-bao-mat | Link mới: 20 | Reward: 10.0
+2026-06-20 07:36:00,752 - RLCrawler - INFO - RL Queue size: 404 | Epsilon: 1.00 | Cào: https://vnexpress.net/chinh-sach-bao-mat
+2026-06-20 07:36:00,928 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/nghi-luc-cua-nguoi-dan-ong-mac-benh-hiem-khien-co-the-hoa-da-5087527.html
+2026-06-20 07:36:01,342 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/nghi-luc-cua-nguoi-dan-ong-mac-benh-hiem-khien-co-the-hoa-da-5087527.html | Link mới: 21 | Reward: 10.0
+2026-06-20 07:36:01,342 - RLCrawler - INFO - RL Queue size: 403 | Epsilon: 1.00 | Cào: https://vnexpress.net/nghi-luc-cua-nguoi-dan-ong-mac-benh-hiem-khien-co-the-hoa-da-5087527.html
+2026-06-20 07:36:01,507 - CrawlerEnv - INFO - Đang cào (Depth 3): https://vnexpress.net/cuoc-song-cua-lu-hoai-thuong-cau-be-hoc-vuot-hai-lop-o-dong-thap-5062687.html
+2026-06-20 07:36:03,461 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/cuoc-song-cua-lu-hoai-thuong-cau-be-hoc-vuot-hai-lop-o-dong-thap-5062687.html | Link mới: 20 | Reward: 10.0
+2026-06-20 07:36:03,462 - RLCrawler - INFO - RL Queue size: 402 | Epsilon: 1.00 | Cào: https://vnexpress.net/cuoc-song-cua-lu-hoai-thuong-cau-be-hoc-vuot-hai-lop-o-dong-thap-5062687.html
+2026-06-20 07:36:03,620 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/khoi-to-tai-xe-tong-oto-gap-su-co-tren-cao-toc-lam-hai-nguoi-tu-vong-5086063.html
+2026-06-20 07:36:04,127 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/khoi-to-tai-xe-tong-oto-gap-su-co-tren-cao-toc-lam-hai-nguoi-tu-vong-5086063.html | Link mới: 23 | Reward: 10.0
+2026-06-20 07:36:04,127 - RLCrawler - INFO - RL Queue size: 401 | Epsilon: 1.00 | Cào: https://vnexpress.net/khoi-to-tai-xe-tong-oto-gap-su-co-tren-cao-toc-lam-hai-nguoi-tu-vong-5086063.html
+2026-06-20 07:36:04,290 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/hon-60-hoc-sinh-tp-hcm-mac-tat-khuc-xa-5087590.html
+2026-06-20 07:36:04,689 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/hon-60-hoc-sinh-tp-hcm-mac-tat-khuc-xa-5087590.html | Link mới: 25 | Reward: 10.0
+2026-06-20 07:36:04,689 - RLCrawler - INFO - RL Queue size: 400 | Epsilon: 1.00 | Cào: https://vnexpress.net/hon-60-hoc-sinh-tp-hcm-mac-tat-khuc-xa-5087590.html
+2026-06-20 07:36:04,850 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/ha-long-co-bao-nhieu-bai-tam-nhan-tao-5084986.html
+2026-06-20 07:36:05,397 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/ha-long-co-bao-nhieu-bai-tam-nhan-tao-5084986.html | Link mới: 21 | Reward: 10.0
+2026-06-20 07:36:05,397 - RLCrawler - INFO - RL Queue size: 400 | Epsilon: 1.00 | Cào: https://vnexpress.net/ha-long-co-bao-nhieu-bai-tam-nhan-tao-5084986.html
+2026-06-20 07:36:05,770 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/5-thuc-uong-ha-huyet-ap-hieu-qua-hon-tra-xanh-5086460.html
+2026-06-20 07:36:06,202 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/5-thuc-uong-ha-huyet-ap-hieu-qua-hon-tra-xanh-5086460.html | Link mới: 24 | Reward: 10.0
+2026-06-20 07:36:06,202 - RLCrawler - INFO - RL Queue size: 399 | Epsilon: 1.00 | Cào: https://vnexpress.net/5-thuc-uong-ha-huyet-ap-hieu-qua-hon-tra-xanh-5086460.html
+2026-06-20 07:36:06,363 - CrawlerEnv - INFO - Đang cào (Depth 3): https://vnexpress.net/giao-duc/giao-duc-40
+2026-06-20 07:36:06,812 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/giao-duc/giao-duc-40 | Link mới: 63 | Reward: 10.0
+2026-06-20 07:36:06,813 - RLCrawler - INFO - RL Queue size: 398 | Epsilon: 1.00 | Cào: https://vnexpress.net/giao-duc/giao-duc-40
+2026-06-20 07:36:06,986 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/cuc-mau-dong-gay-dot-quy-thuong-hinh-thanh-o-dau-5086739.html
+2026-06-20 07:36:07,459 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/cuc-mau-dong-gay-dot-quy-thuong-hinh-thanh-o-dau-5086739.html | Link mới: 25 | Reward: 10.0
+2026-06-20 07:36:07,459 - RLCrawler - INFO - RL Queue size: 434 | Epsilon: 1.00 | Cào: https://vnexpress.net/cuc-mau-dong-gay-dot-quy-thuong-hinh-thanh-o-dau-5086739.html
+2026-06-20 07:36:07,616 - CrawlerEnv - INFO - Đang cào (Depth 3): https://vnexpress.net/ba-buoc-doi-the-can-cuoc-tren-vneid-do-thay-doi-don-vi-hanh-chinh-4926444.html
+2026-06-20 07:36:09,414 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/ba-buoc-doi-the-can-cuoc-tren-vneid-do-thay-doi-don-vi-hanh-chinh-4926444.html | Link mới: 23 | Reward: 10.0
+2026-06-20 07:36:09,414 - RLCrawler - INFO - RL Queue size: 437 | Epsilon: 1.00 | Cào: https://vnexpress.net/ba-buoc-doi-the-can-cuoc-tren-vneid-do-thay-doi-don-vi-hanh-chinh-4926444.html
+2026-06-20 07:36:09,572 - CrawlerEnv - INFO - Đang cào (Depth 3): https://vnexpress.net/vne-go/quoc-te
+2026-06-20 07:36:11,735 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/vne-go/quoc-te | Link mới: 22 | Reward: 4.0
+2026-06-20 07:36:11,735 - RLCrawler - INFO - RL Queue size: 436 | Epsilon: 1.00 | Cào: https://vnexpress.net/vne-go/quoc-te
+2026-06-20 07:36:11,882 - CrawlerEnv - INFO - Đang cào (Depth 4): https://vnexpress.net/rss
+2026-06-20 07:36:12,287 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/rss | Link mới: 42 | Reward: 10.0
+2026-06-20 07:36:12,287 - RLCrawler - INFO - RL Queue size: 435 | Epsilon: 1.00 | Cào: https://vnexpress.net/rss
+2026-06-20 07:36:12,440 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/187-nguoi-lua-mua-ban-ky-nghi-bi-khoi-to-5086946.html
+2026-06-20 07:36:13,114 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/187-nguoi-lua-mua-ban-ky-nghi-bi-khoi-to-5086946.html | Link mới: 20 | Reward: 10.0
+2026-06-20 07:36:13,114 - RLCrawler - INFO - RL Queue size: 456 | Epsilon: 1.00 | Cào: https://vnexpress.net/187-nguoi-lua-mua-ban-ky-nghi-bi-khoi-to-5086946.html
+2026-06-20 07:36:13,272 - CrawlerEnv - INFO - Đang cào (Depth 3): https://vnexpress.net/cam-nang-du-lich-nha-trang-tu-a-den-z-4127199.html
+2026-06-20 07:36:14,625 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/cam-nang-du-lich-nha-trang-tu-a-den-z-4127199.html | Link mới: 6 | Reward: 4.0
+2026-06-20 07:36:14,625 - RLCrawler - INFO - RL Queue size: 455 | Epsilon: 1.00 | Cào: https://vnexpress.net/cam-nang-du-lich-nha-trang-tu-a-den-z-4127199.html
+2026-06-20 07:36:14,794 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/ep-nu-tiep-vien-karaoke-nop-tien-bao-ke-moi-tuan-300-000-dong-5086450.html
+2026-06-20 07:36:15,261 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/ep-nu-tiep-vien-karaoke-nop-tien-bao-ke-moi-tuan-300-000-dong-5086450.html | Link mới: 23 | Reward: 10.0
+2026-06-20 07:36:15,261 - RLCrawler - INFO - RL Queue size: 457 | Epsilon: 1.00 | Cào: https://vnexpress.net/ep-nu-tiep-vien-karaoke-nop-tien-bao-ke-moi-tuan-300-000-dong-5086450.html
+2026-06-20 07:36:15,420 - CrawlerEnv - INFO - Đang cào (Depth 3): https://vnexpress.net/tien-si-viet-chinh-phuc-quy-khoa-hoc-kho-tinh-bac-nhat-my-5086527.html
+2026-06-20 07:36:15,843 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/tien-si-viet-chinh-phuc-quy-khoa-hoc-kho-tinh-bac-nhat-my-5086527.html | Link mới: 3 | Reward: 2.0
+2026-06-20 07:36:15,843 - RLCrawler - INFO - RL Queue size: 456 | Epsilon: 1.00 | Cào: https://vnexpress.net/tien-si-viet-chinh-phuc-quy-khoa-hoc-kho-tinh-bac-nhat-my-5086527.html
+2026-06-20 07:36:16,244 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/doanh-thu-duoi-mot-ty-dong-ho-kinh-doanh-da-nop-thue-se-duoc-hoan-lai-cach-nao-5083330.html
+2026-06-20 07:36:16,649 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/doanh-thu-duoi-mot-ty-dong-ho-kinh-doanh-da-nop-thue-se-duoc-hoan-lai-cach-nao-5083330.html | Link mới: 25 | Reward: 10.0
+2026-06-20 07:36:16,649 - RLCrawler - INFO - RL Queue size: 456 | Epsilon: 1.00 | Cào: https://vnexpress.net/doanh-thu-duoi-mot-ty-dong-ho-kinh-doanh-da-nop-thue-se-duoc-hoan-lai-cach-nao-5083330.html
+2026-06-20 07:36:16,806 - CrawlerEnv - INFO - Đang cào (Depth 3): https://vnexpress.net/truy-quet-nhom-nguoi-viet-o-campuchia-gia-cong-an-lua-8-000-nan-nhan-4957460.html
+2026-06-20 07:36:17,329 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/truy-quet-nhom-nguoi-viet-o-campuchia-gia-cong-an-lua-8-000-nan-nhan-4957460.html | Link mới: 20 | Reward: 10.0
+2026-06-20 07:36:17,329 - RLCrawler - INFO - RL Queue size: 456 | Epsilon: 1.00 | Cào: https://vnexpress.net/truy-quet-nhom-nguoi-viet-o-campuchia-gia-cong-an-lua-8-000-nan-nhan-4957460.html
+2026-06-20 07:36:17,488 - CrawlerEnv - INFO - Đang cào (Depth 3): https://vnexpress.net/du-lich/diem-den/viet-nam
+2026-06-20 07:36:19,815 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/du-lich/diem-den/viet-nam | Link mới: 56 | Reward: 10.0
+2026-06-20 07:36:19,815 - RLCrawler - INFO - RL Queue size: 455 | Epsilon: 1.00 | Cào: https://vnexpress.net/du-lich/diem-den/viet-nam
+2026-06-20 07:36:19,996 - CrawlerEnv - INFO - Đang cào (Depth 3): https://vnexpress.net/vne-go/trong-nuoc
+2026-06-20 07:36:22,136 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/vne-go/trong-nuoc | Link mới: 21 | Reward: 4.0
+2026-06-20 07:36:22,136 - RLCrawler - INFO - RL Queue size: 480 | Epsilon: 1.00 | Cào: https://vnexpress.net/vne-go/trong-nuoc
+2026-06-20 07:36:22,284 - CrawlerEnv - INFO - Đang cào (Depth 4): https://vnexpress.net/giao-duc/giao-duc-40/xu-huong
+2026-06-20 07:36:23,448 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/giao-duc/giao-duc-40/xu-huong | Link mới: 65 | Reward: 10.0
+2026-06-20 07:36:23,448 - RLCrawler - INFO - RL Queue size: 479 | Epsilon: 1.00 | Cào: https://vnexpress.net/giao-duc/giao-duc-40/xu-huong
+2026-06-20 07:36:23,626 - CrawlerEnv - INFO - Đang cào (Depth 4): https://vnexpress.net/chuyen-gia-khuyen-khich-ung-dung-ai-co-chon-loc-vao-giao-duc-4954382.html
+2026-06-20 07:36:25,183 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/chuyen-gia-khuyen-khich-ung-dung-ai-co-chon-loc-vao-giao-duc-4954382.html | Link mới: 23 | Reward: 10.0
+2026-06-20 07:36:25,183 - RLCrawler - INFO - RL Queue size: 511 | Epsilon: 1.00 | Cào: https://vnexpress.net/chuyen-gia-khuyen-khich-ung-dung-ai-co-chon-loc-vao-giao-duc-4954382.html
+2026-06-20 07:36:25,346 - CrawlerEnv - INFO - Đang cào (Depth 4): https://video.vnexpress.net/phap-luat/camera-an-ninh
+2026-06-20 07:36:26,286 - CrawlerEnv - INFO - Cào thành công: https://video.vnexpress.net/phap-luat/camera-an-ninh | Link mới: 45 | Reward: 10.0
+2026-06-20 07:36:26,286 - RLCrawler - INFO - RL Queue size: 510 | Epsilon: 1.00 | Cào: https://video.vnexpress.net/phap-luat/camera-an-ninh
+2026-06-20 07:36:26,654 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/thu-gian
+2026-06-20 07:36:27,204 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/thu-gian | Link mới: 69 | Reward: 10.0
+2026-06-20 07:36:27,205 - RLCrawler - INFO - RL Queue size: 513 | Epsilon: 1.00 | Cào: https://vnexpress.net/thu-gian
+2026-06-20 07:36:27,412 - CrawlerEnv - INFO - Đang cào (Depth 4): https://vnexpress.net/leo-nui-ngam-nha-trang-len-den-4380702.html
+2026-06-20 07:36:30,214 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/leo-nui-ngam-nha-trang-len-den-4380702.html | Link mới: 27 | Reward: 10.0
+2026-06-20 07:36:30,214 - RLCrawler - INFO - RL Queue size: 559 | Epsilon: 1.00 | Cào: https://vnexpress.net/leo-nui-ngam-nha-trang-len-den-4380702.html
+2026-06-20 07:36:30,377 - CrawlerEnv - INFO - Đang cào (Depth 4): https://video.vnexpress.net/suc-khoe
+2026-06-20 07:36:30,664 - CrawlerEnv - INFO - Cào thành công: https://video.vnexpress.net/suc-khoe | Link mới: 43 | Reward: 10.0
+2026-06-20 07:36:30,664 - RLCrawler - INFO - RL Queue size: 565 | Epsilon: 1.00 | Cào: https://video.vnexpress.net/suc-khoe
+2026-06-20 07:36:30,794 - CrawlerEnv - INFO - Đang cào (Depth 4): https://vnexpress.net/thach-thuc-va-giai-phap-dao-tao-ai-cho-nguoi-khuyet-tat-4987229.html
+2026-06-20 07:36:32,655 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/thach-thuc-va-giai-phap-dao-tao-ai-cho-nguoi-khuyet-tat-4987229.html | Link mới: 19 | Reward: 10.0
+2026-06-20 07:36:32,655 - RLCrawler - INFO - RL Queue size: 568 | Epsilon: 1.00 | Cào: https://vnexpress.net/thach-thuc-va-giai-phap-dao-tao-ai-cho-nguoi-khuyet-tat-4987229.html
+2026-06-20 07:36:32,806 - CrawlerEnv - INFO - Đang cào (Depth 4): https://vnexpress.net/tin-nong
+2026-06-20 07:36:33,217 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/tin-nong | Link mới: 37 | Reward: 10.0
+2026-06-20 07:36:33,217 - RLCrawler - INFO - RL Queue size: 567 | Epsilon: 1.00 | Cào: https://vnexpress.net/tin-nong
+2026-06-20 07:36:33,389 - CrawlerEnv - INFO - Đang cào (Depth 3): https://vnexpress.net/giao-duc/hoc-tieng-anh
+2026-06-20 07:36:33,910 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/giao-duc/hoc-tieng-anh | Link mới: 57 | Reward: 10.0
+2026-06-20 07:36:33,911 - RLCrawler - INFO - RL Queue size: 572 | Epsilon: 1.00 | Cào: https://vnexpress.net/giao-duc/hoc-tieng-anh
+2026-06-20 07:36:34,108 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/mang-hung-khi-sang-nha-hang-xom-doa-giet-5086737.html
+2026-06-20 07:36:34,469 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/mang-hung-khi-sang-nha-hang-xom-doa-giet-5086737.html | Link mới: 19 | Reward: 10.0
+2026-06-20 07:36:34,469 - RLCrawler - INFO - RL Queue size: 604 | Epsilon: 1.00 | Cào: https://vnexpress.net/mang-hung-khi-sang-nha-hang-xom-doa-giet-5086737.html
+2026-06-20 07:36:34,826 - CrawlerEnv - INFO - Đang cào (Depth 4): https://vnexpress.net/du-lich/diem-den/viet-nam-p3
+2026-06-20 07:36:35,820 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/du-lich/diem-den/viet-nam-p3 | Link mới: 57 | Reward: 10.0
+2026-06-20 07:36:35,820 - RLCrawler - INFO - RL Queue size: 603 | Epsilon: 1.00 | Cào: https://vnexpress.net/du-lich/diem-den/viet-nam-p3
+2026-06-20 07:36:35,963 - CrawlerEnv - INFO - Đang cào (Depth 3): https://vnexpress.net/10-mon-banh-ngot-nuc-tieng-cua-am-thuc-phap-5080212.html
+2026-06-20 07:36:36,317 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/10-mon-banh-ngot-nuc-tieng-cua-am-thuc-phap-5080212.html | Link mới: 21 | Reward: 10.0
+2026-06-20 07:36:36,317 - RLCrawler - INFO - RL Queue size: 632 | Epsilon: 1.00 | Cào: https://vnexpress.net/10-mon-banh-ngot-nuc-tieng-cua-am-thuc-phap-5080212.html
+2026-06-20 07:36:36,453 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/cau-do-que-diem-di-chuyen-que-diem-di-chuyen-que-diem-nao-de-6-5-4-dung-5085035.html
+2026-06-20 07:36:36,891 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/cau-do-que-diem-di-chuyen-que-diem-di-chuyen-que-diem-nao-de-6-5-4-dung-5085035.html | Link mới: 25 | Reward: 10.0
+2026-06-20 07:36:36,891 - RLCrawler - INFO - RL Queue size: 631 | Epsilon: 1.00 | Cào: https://vnexpress.net/cau-do-que-diem-di-chuyen-que-diem-di-chuyen-que-diem-nao-de-6-5-4-dung-5085035.html
+2026-06-20 07:36:37,055 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/an-hat-mit-gay-boc-hoa-5086804.html
+2026-06-20 07:36:37,476 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/an-hat-mit-gay-boc-hoa-5086804.html | Link mới: 24 | Reward: 10.0
+2026-06-20 07:36:37,476 - RLCrawler - INFO - RL Queue size: 632 | Epsilon: 1.00 | Cào: https://vnexpress.net/an-hat-mit-gay-boc-hoa-5086804.html
+2026-06-20 07:36:37,867 - CrawlerEnv - INFO - Đang cào (Depth 4): https://vnexpress.net/guong-mat-9-0-ielts-goi-y-cach-hoc-tieng-anh-cho-nguoi-mat-goc-5086944.html
+2026-06-20 07:36:38,382 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/guong-mat-9-0-ielts-goi-y-cach-hoc-tieng-anh-cho-nguoi-mat-goc-5086944.html | Link mới: 22 | Reward: 10.0
+2026-06-20 07:36:38,382 - RLCrawler - INFO - RL Queue size: 632 | Epsilon: 1.00 | Cào: https://vnexpress.net/guong-mat-9-0-ielts-goi-y-cach-hoc-tieng-anh-cho-nguoi-mat-goc-5086944.html
+2026-06-20 07:36:38,577 - CrawlerEnv - INFO - Đang cào (Depth 3): https://vnexpress.net/di-tu-o-my-ton-kem-the-nao-ma-nhieu-pham-nhan-ra-trai-van-mang-no-5047159.html
+2026-06-20 07:36:39,976 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/di-tu-o-my-ton-kem-the-nao-ma-nhieu-pham-nhan-ra-trai-van-mang-no-5047159.html | Link mới: 22 | Reward: 10.0
+2026-06-20 07:36:39,976 - RLCrawler - INFO - RL Queue size: 631 | Epsilon: 1.00 | Cào: https://vnexpress.net/di-tu-o-my-ton-kem-the-nao-ma-nhieu-pham-nhan-ra-trai-van-mang-no-5047159.html
+2026-06-20 07:36:40,135 - CrawlerEnv - INFO - Đang cào (Depth 5): https://vnexpress.net/giao-vien-ai-tang-hieu-qua-giang-day-tai-trung-quoc-3823241.html
+2026-06-20 07:36:41,334 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/giao-vien-ai-tang-hieu-qua-giang-day-tai-trung-quoc-3823241.html | Link mới: 22 | Reward: 10.0
+2026-06-20 07:36:41,334 - RLCrawler - INFO - RL Queue size: 630 | Epsilon: 1.00 | Cào: https://vnexpress.net/giao-vien-ai-tang-hieu-qua-giang-day-tai-trung-quoc-3823241.html
+2026-06-20 07:36:41,493 - CrawlerEnv - INFO - Đang cào (Depth 4): https://video.vnexpress.net/giai-tri
+2026-06-20 07:36:42,179 - CrawlerEnv - INFO - Cào thành công: https://video.vnexpress.net/giai-tri | Link mới: 41 | Reward: 10.0
+2026-06-20 07:36:42,179 - RLCrawler - INFO - RL Queue size: 629 | Epsilon: 1.00 | Cào: https://video.vnexpress.net/giai-tri
+2026-06-20 07:36:42,312 - CrawlerEnv - INFO - Đang cào (Depth 5): https://vnexpress.net/rss/thoi-su.rss
+2026-06-20 07:36:42,861 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/rss/thoi-su.rss | Link mới: 0 | Reward: 4.0
+2026-06-20 07:36:42,861 - RLCrawler - INFO - RL Queue size: 632 | Epsilon: 1.00 | Cào: https://vnexpress.net/rss/thoi-su.rss
+2026-06-20 07:36:43,074 - CrawlerEnv - INFO - Đang cào (Depth 1): https://vnexpress.net/the-gioi
+2026-06-20 07:36:43,962 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/the-gioi | Link mới: 74 | Reward: 10.0
+2026-06-20 07:36:43,962 - RLCrawler - INFO - RL Queue size: 631 | Epsilon: 1.00 | Cào: https://vnexpress.net/the-gioi
+2026-06-20 07:36:44,156 - CrawlerEnv - INFO - Đang cào (Depth 4): https://vnexpress.net/giao-duc/giao-duc-40-p2
+2026-06-20 07:36:46,319 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/giao-duc/giao-duc-40-p2 | Link mới: 60 | Reward: 10.0
+2026-06-20 07:36:46,320 - RLCrawler - INFO - RL Queue size: 680 | Epsilon: 1.00 | Cào: https://vnexpress.net/giao-duc/giao-duc-40-p2
+2026-06-20 07:36:46,492 - CrawlerEnv - INFO - Đang cào (Depth 5): https://vnexpress.net/me-bim-hoc-online-chinh-phuc-nghe-data-analyst-4852354.html
+2026-06-20 07:36:48,015 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/me-bim-hoc-online-chinh-phuc-nghe-data-analyst-4852354.html | Link mới: 21 | Reward: 10.0
+2026-06-20 07:36:48,015 - RLCrawler - INFO - RL Queue size: 709 | Epsilon: 1.00 | Cào: https://vnexpress.net/me-bim-hoc-online-chinh-phuc-nghe-data-analyst-4852354.html
+2026-06-20 07:36:48,180 - CrawlerEnv - INFO - Đang cào (Depth 5): https://vnexpress.net/rss/giao-duc.rss
+2026-06-20 07:36:48,806 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/rss/giao-duc.rss | Link mới: 0 | Reward: 4.0
+2026-06-20 07:36:48,806 - RLCrawler - INFO - RL Queue size: 708 | Epsilon: 1.00 | Cào: https://vnexpress.net/rss/giao-duc.rss
+2026-06-20 07:36:49,023 - CrawlerEnv - INFO - Đang cào (Depth 5): https://vnexpress.net/giao-duc/giao-duc-40/xu-huong-p2
+2026-06-20 07:36:50,117 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/giao-duc/giao-duc-40/xu-huong-p2 | Link mới: 60 | Reward: 10.0
+2026-06-20 07:36:50,117 - RLCrawler - INFO - RL Queue size: 707 | Epsilon: 1.00 | Cào: https://vnexpress.net/giao-duc/giao-duc-40/xu-huong-p2
+2026-06-20 07:36:50,295 - CrawlerEnv - INFO - Đang cào (Depth 3): https://vnexpress.net/om-may-tinh-cu-chinh-phuc-hang-chuc-giai-lap-trinh-khap-the-gioi-5074603.html
+2026-06-20 07:36:52,066 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/om-may-tinh-cu-chinh-phuc-hang-chuc-giai-lap-trinh-khap-the-gioi-5074603.html | Link mới: 21 | Reward: 10.0
+2026-06-20 07:36:52,066 - RLCrawler - INFO - RL Queue size: 736 | Epsilon: 1.00 | Cào: https://vnexpress.net/om-may-tinh-cu-chinh-phuc-hang-chuc-giai-lap-trinh-khap-the-gioi-5074603.html
+2026-06-20 07:36:52,225 - CrawlerEnv - INFO - Đang cào (Depth 3): https://vnexpress.net/khoanh-khac-nguoi-dan-chan-cua-nhot-ten-cuop-tiem-vang-4931896.html
+2026-06-20 07:36:53,576 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/khoanh-khac-nguoi-dan-chan-cua-nhot-ten-cuop-tiem-vang-4931896.html | Link mới: 21 | Reward: 4.0
+2026-06-20 07:36:53,577 - RLCrawler - INFO - RL Queue size: 735 | Epsilon: 1.00 | Cào: https://vnexpress.net/khoanh-khac-nguoi-dan-chan-cua-nhot-ten-cuop-tiem-vang-4931896.html
+2026-06-20 07:36:53,702 - CrawlerEnv - INFO - Đang cào (Depth 5): https://vnexpress.net/toa-nha-danh-cho-cac-cong-ty-cong-nghe-giao-duc-tai-bac-kinh-3855717.html
+2026-06-20 07:36:55,382 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/toa-nha-danh-cho-cac-cong-ty-cong-nghe-giao-duc-tai-bac-kinh-3855717.html | Link mới: 19 | Reward: 10.0
+2026-06-20 07:36:55,382 - RLCrawler - INFO - RL Queue size: 734 | Epsilon: 1.00 | Cào: https://vnexpress.net/toa-nha-danh-cho-cac-cong-ty-cong-nghe-giao-duc-tai-bac-kinh-3855717.html
+2026-06-20 07:36:55,536 - CrawlerEnv - INFO - Đang cào (Depth 4): https://video.vnexpress.net/trom-binh-oto/tag-1808170-1.html
+2026-06-20 07:36:56,063 - CrawlerEnv - INFO - Cào thành công: https://video.vnexpress.net/trom-binh-oto/tag-1808170-1.html | Link mới: 42 | Reward: 10.0
+2026-06-20 07:36:56,063 - RLCrawler - INFO - RL Queue size: 734 | Epsilon: 1.00 | Cào: https://video.vnexpress.net/trom-binh-oto/tag-1808170-1.html
+2026-06-20 07:36:56,185 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/khoi-u-nao-khong-lo-chiem-gan-1-4-hop-so-co-gai-5087291.html
+2026-06-20 07:36:56,648 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/khoi-u-nao-khong-lo-chiem-gan-1-4-hop-so-co-gai-5087291.html | Link mới: 19 | Reward: 10.0
+2026-06-20 07:36:56,648 - RLCrawler - INFO - RL Queue size: 739 | Epsilon: 1.00 | Cào: https://vnexpress.net/khoi-u-nao-khong-lo-chiem-gan-1-4-hop-so-co-gai-5087291.html
+2026-06-20 07:36:56,773 - CrawlerEnv - INFO - Đang cào (Depth 5): https://vnexpress.net/le-hoi-dau-nam-nao-dai-nhat-viet-nam-5044032.html
+2026-06-20 07:36:58,616 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/le-hoi-dau-nam-nao-dai-nhat-viet-nam-5044032.html | Link mới: 19 | Reward: 10.0
+2026-06-20 07:36:58,616 - RLCrawler - INFO - RL Queue size: 738 | Epsilon: 1.00 | Cào: https://vnexpress.net/le-hoi-dau-nam-nao-dai-nhat-viet-nam-5044032.html
+2026-06-20 07:36:58,771 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/phap-luat-p3
+2026-06-20 07:36:59,930 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/phap-luat-p3 | Link mới: 55 | Reward: 10.0
+2026-06-20 07:36:59,930 - RLCrawler - INFO - RL Queue size: 737 | Epsilon: 1.00 | Cào: https://vnexpress.net/phap-luat-p3
+2026-06-20 07:37:00,123 - CrawlerEnv - INFO - Đang cào (Depth 3): https://vnexpress.net/ben-trong-bar-vu-truong-vua-bi-400-canh-sat-dot-kich-4927946.html
+2026-06-20 07:37:01,448 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/ben-trong-bar-vu-truong-vua-bi-400-canh-sat-dot-kich-4927946.html | Link mới: 21 | Reward: 10.0
+2026-06-20 07:37:01,448 - RLCrawler - INFO - RL Queue size: 766 | Epsilon: 1.00 | Cào: https://vnexpress.net/ben-trong-bar-vu-truong-vua-bi-400-canh-sat-dot-kich-4927946.html
+2026-06-20 07:37:01,619 - CrawlerEnv - INFO - Đang cào (Depth 3): https://vnexpress.net/ten-trom-vang-cuoi-lua-tron-khoi-hien-truong-5040602.html
+2026-06-20 07:37:04,153 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/ten-trom-vang-cuoi-lua-tron-khoi-hien-truong-5040602.html | Link mới: 21 | Reward: 10.0
+2026-06-20 07:37:04,153 - RLCrawler - INFO - RL Queue size: 765 | Epsilon: 1.00 | Cào: https://vnexpress.net/ten-trom-vang-cuoi-lua-tron-khoi-hien-truong-5040602.html
+2026-06-20 07:37:04,312 - CrawlerEnv - INFO - Đang cào (Depth 2): https://vnexpress.net/thu-gian-video-hai-chuyen-la-chu-ban-banh-bao-pr-mien-phi-giup-co-ban-sau-rieng-5086879.html
+2026-06-20 07:37:05,974 - CrawlerEnv - INFO - Cào thành công: https://vnexpress.net/thu-gian-video-hai-chuyen-la-chu-ban-banh-bao-pr-mien-phi-giup-co-ban-sau-rieng-5086879.html | Link mới: 24 | Reward: 10.0
+2026-06-20 07:37:05,975 - RLCrawler - INFO - RL Queue size: 764 | Epsilon: 1.00 | Cào: https://vnexpress.net/thu-gian-video-hai-chuyen-la-chu-ban-banh-bao-pr-mien-phi-giup-co-ban-sau-rieng-5086879.html
+2026-06-20 07:37:06,232 - CrawlerEnv - INFO - Đã đóng browser.
+2026-06-20 07:37:06,251 - Evaluate - INFO - RL hoàn thành trong 113.68s | Băng thông: 92.23 MB | Tổng Reward: 1412.85 | Tổng số trang cào: 100
+2026-06-20 07:37:06,251 - Evaluate - INFO - Đang tạo biểu đồ so sánh kết quả...
+2026-06-20 07:37:06,641 - Evaluate - INFO - Kết quả tính toán đã được lưu vào 'evaluation_results.json'.
+2026-06-20 07:37:06,642 - Evaluate - INFO - Kết quả biểu đồ đã được lưu thành tệp 'evaluation_results.png'. Hãy mở tệp này để xem.
+2026-06-20 07:37:06,642 - Evaluate - INFO - Hoàn tất quá trình cào dữ liệu! Text của các bài báo đã được lưu trong folder 'data/vnexpress_net/'.
